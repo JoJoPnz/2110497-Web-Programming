@@ -1,0 +1,107 @@
+Started GET "/" for 127.0.0.1 at 2022-08-18 22:27:14 +0700
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 466)
+  Rendered layout layouts/application.html.erb (Duration: 970.1ms | Allocations: 85824)
+Completed 200 OK in 1007ms (Views: 986.6ms | ActiveRecord: 0.0ms | Allocations: 90450)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-18 22:28:18 +0700
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 2508)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 2841)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-18 22:30:52 +0700
+  
+SyntaxError (/home/jojo/homework01/config/routes.rb:3: syntax error, unexpected local variable or method, expecting `end'
+  '/' to: 'main#index'
+      ^~
+):
+  
+config/routes.rb:3: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:3: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:3: syntax error, unexpected local variable or method, expecting `end'
+Started GET "/" for 127.0.0.1 at 2022-08-18 22:30:54 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+Started GET "/" for 127.0.0.1 at 2022-08-18 22:31:00 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+Started GET "/a" for 127.0.0.1 at 2022-08-18 22:31:13 +0700
+  
+SyntaxError (/home/jojo/homework01/config/routes.rb:3: syntax error, unexpected local variable or method, expecting `end'
+  'a' to: 'main#index'
+      ^~
+):
+  
+config/routes.rb:3: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:3: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:3: syntax error, unexpected local variable or method, expecting `end'
+Started GET "/" for 127.0.0.1 at 2022-08-18 22:31:28 +0700
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 152)
+  Rendered layout layouts/application.html.erb (Duration: 38.0ms | Allocations: 14245)
+Completed 200 OK in 45ms (Views: 44.1ms | Allocations: 15171)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-18 22:31:42 +0700
+  
+SyntaxError (/home/jojo/homework01/config/routes.rb:3: syntax error, unexpected local variable or method, expecting `end'
+  get '/' to: 'main#index'
+          ^~
+):
+  
+config/routes.rb:3: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:3: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:3: syntax error, unexpected local variable or method, expecting `end'
+Started GET "/a" for 127.0.0.1 at 2022-08-18 22:31:57 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/a"):
+  
+Started GET "/" for 127.0.0.1 at 2022-08-18 22:31:59 +0700
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 34.6ms | Allocations: 13942)
+Completed 200 OK in 46ms (Views: 45.2ms | Allocations: 14584)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-18 22:32:41 +0700
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 13832)
+Completed 200 OK in 43ms (Views: 41.7ms | Allocations: 14473)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-21 10:45:58 +0700
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 358)
+  Rendered layout layouts/application.html.erb (Duration: 157.7ms | Allocations: 35157)
+Completed 200 OK in 184ms (Views: 170.1ms | ActiveRecord: 0.0ms | Allocations: 38553)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-21 10:46:24 +0700
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 158)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3029)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 3923)
+
+
