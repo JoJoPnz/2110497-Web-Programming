@@ -1,0 +1,291 @@
+Started GET "/" for 127.0.0.1 at 2022-08-25 13:14:05 +0700
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.1ms | Allocations: 657)
+Completed 200 OK in 56ms (Views: 24.6ms | ActiveRecord: 0.0ms | Allocations: 5115)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-25 13:19:53 +0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.2ms | Allocations: 549)
+Completed 200 OK in 22ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 3791)
+
+
+Started GET "/test1" for 127.0.0.1 at 2022-08-25 13:19:58 +0700
+Processing by MainController#test1 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 9)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.0ms | Allocations: 817)
+
+
+Started GET "/test2" for 127.0.0.1 at 2022-08-25 13:20:06 +0700
+Processing by MainController#test2 as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 16)
+Completed 200 OK in 54ms (Views: 54.0ms | ActiveRecord: 0.0ms | Allocations: 488)
+
+
+Started GET "/test3" for 127.0.0.1 at 2022-08-25 13:20:08 +0700
+Processing by MainController#test3 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 227)
+
+
+Started GET "/test4" for 127.0.0.1 at 2022-08-25 13:20:10 +0700
+Processing by MainController#test4 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test4.html.erb within layouts/application
+  Rendered main/test4.html.erb within layouts/application (Duration: 0.5ms | Allocations: 159)
+  Rendered layout layouts/application.html.erb (Duration: 672.2ms | Allocations: 85535)
+Completed 200 OK in 675ms (Views: 674.8ms | ActiveRecord: 0.0ms | Allocations: 86109)
+
+
+Started GET "/test1" for 127.0.0.1 at 2022-08-25 13:20:15 +0700
+Processing by MainController#test1 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 196)
+
+
+Started GET "/test2" for 127.0.0.1 at 2022-08-25 13:20:17 +0700
+Processing by MainController#test2 as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 197)
+
+
+Started GET "/test1" for 127.0.0.1 at 2022-08-25 13:20:19 +0700
+Processing by MainController#test1 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 194)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-25 13:20:27 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.1ms | Allocations: 328)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 933)
+
+
+Started GET "/test2" for 127.0.0.1 at 2022-08-25 13:20:30 +0700
+Processing by MainController#test2 as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 220)
+
+
+Started GET "/test3" for 127.0.0.1 at 2022-08-25 13:20:35 +0700
+Processing by MainController#test3 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 195)
+
+
+Started GET "/test1" for 127.0.0.1 at 2022-08-25 13:20:38 +0700
+Processing by MainController#test1 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 195)
+
+
+Started GET "/test4" for 127.0.0.1 at 2022-08-25 13:20:41 +0700
+Processing by MainController#test4 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test4.html.erb within layouts/application
+  Rendered main/test4.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2574)
+Completed 200 OK in 13ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 2835)
+
+
+Started GET "/test4" for 127.0.0.1 at 2022-08-25 13:29:07 +0700
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MainController#test4 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test4.html.erb within layouts/application
+  Rendered main/test4.html.erb within layouts/application (Duration: 0.9ms | Allocations: 345)
+  Rendered layout layouts/application.html.erb (Duration: 397.6ms | Allocations: 34742)
+Completed 200 OK in 427ms (Views: 423.8ms | ActiveRecord: 0.0ms | Allocations: 38104)
+
+
+Started GET "/test3" for 127.0.0.1 at 2022-08-25 13:29:09 +0700
+Processing by MainController#test3 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 9)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 392)
+
+
+Started GET "/test2" for 127.0.0.1 at 2022-08-25 13:29:11 +0700
+Processing by MainController#test2 as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 14)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 411)
+
+
+Started GET "/test1" for 127.0.0.1 at 2022-08-25 13:29:13 +0700
+Processing by MainController#test1 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 225)
+
+
+Started GET "/test2" for 127.0.0.1 at 2022-08-25 13:29:24 +0700
+Processing by MainController#test2 as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 201)
+
+
+Started GET "/test3" for 127.0.0.1 at 2022-08-25 13:29:26 +0700
+Processing by MainController#test3 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 195)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-25 13:29:34 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.2ms | Allocations: 332)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 1154)
+
+
+Started GET "/test1" for 127.0.0.1 at 2022-08-25 13:29:45 +0700
+Processing by MainController#test1 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 495)
+
+
+Started GET "/test2" for 127.0.0.1 at 2022-08-25 13:30:15 +0700
+Processing by MainController#test2 as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 220)
+
+
+Started GET "/test3" for 127.0.0.1 at 2022-08-25 13:30:18 +0700
+Processing by MainController#test3 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 195)
+
+
+Started GET "/test1" for 127.0.0.1 at 2022-08-25 13:30:27 +0700
+Processing by MainController#test1 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 194)
+
+
+Started GET "/test3" for 127.0.0.1 at 2022-08-25 13:30:33 +0700
+Processing by MainController#test3 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 194)
+
+
+Started GET "/test2" for 127.0.0.1 at 2022-08-25 13:31:28 +0700
+Processing by MainController#test2 as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 196)
+
+
+Started GET "/test1" for 127.0.0.1 at 2022-08-25 13:31:30 +0700
+Processing by MainController#test1 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 194)
+
+
+Started GET "/test3" for 127.0.0.1 at 2022-08-25 13:31:32 +0700
+Processing by MainController#test3 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 194)
+
+
+Started GET "/test4" for 127.0.0.1 at 2022-08-25 13:31:51 +0700
+Processing by MainController#test4 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test4.html.erb within layouts/application
+  Rendered main/test4.html.erb within layouts/application (Duration: 0.4ms | Allocations: 146)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 2972)
+Completed 200 OK in 17ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 3525)
+
+
+Started GET "/test3" for 127.0.0.1 at 2022-08-25 13:36:56 +0700
+Processing by MainController#test3 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 2ms (Views: 1.4ms | Allocations: 191)
+
+
+Started GET "/test2" for 127.0.0.1 at 2022-08-25 13:37:04 +0700
+Processing by MainController#test2 as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 1ms (Views: 0.3ms | Allocations: 193)
+
+
+Started GET "/test1" for 127.0.0.1 at 2022-08-25 13:37:10 +0700
+Processing by MainController#test1 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 1ms (Views: 0.3ms | Allocations: 191)
+
+
+Started GET "/test2" for 127.0.0.1 at 2022-08-25 13:37:26 +0700
+Processing by MainController#test2 as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 1ms (Views: 0.4ms | Allocations: 193)
+
+
+Started GET "/test1" for 127.0.0.1 at 2022-08-25 13:37:34 +0700
+Processing by MainController#test1 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 2ms (Views: 2.0ms | Allocations: 191)
+
+
+Started GET "/test2" for 127.0.0.1 at 2022-08-25 13:37:52 +0700
+Processing by MainController#test2 as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 3ms (Views: 2.4ms | Allocations: 193)
+
+
+Started GET "/test3" for 127.0.0.1 at 2022-08-25 13:38:01 +0700
+Processing by MainController#test3 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 0ms (Views: 0.3ms | Allocations: 191)
+
+
+Started GET "/test2" for 127.0.0.1 at 2022-08-25 13:38:17 +0700
+Processing by MainController#test2 as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 1ms (Views: 0.5ms | Allocations: 193)
+
+
+Started GET "/test1" for 127.0.0.1 at 2022-08-25 13:40:39 +0700
+Processing by MainController#test1 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 2ms (Views: 1.9ms | Allocations: 191)
+
+
+Started GET "/test2" for 127.0.0.1 at 2022-08-25 13:41:05 +0700
+Processing by MainController#test2 as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 1ms (Views: 0.4ms | Allocations: 193)
+
+
