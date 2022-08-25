@@ -289,3 +289,169 @@ Processing by MainController#test2 as HTML
 Completed 200 OK in 1ms (Views: 0.4ms | Allocations: 193)
 
 
+Started GET "/" for 127.0.0.1 at 2022-08-25 14:18:53 +0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.1ms | Allocations: 557)
+Completed 200 OK in 33ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 3801)
+
+
+Started GET "/test2" for 127.0.0.1 at 2022-08-25 14:18:58 +0700
+Processing by MainController#test2 as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 16)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 770)
+
+
+Started GET "/test3" for 127.0.0.1 at 2022-08-25 14:19:02 +0700
+Processing by MainController#test3 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 398)
+
+
+Started GET "/test3?abc=123&def=456" for 127.0.0.1 at 2022-08-25 14:23:43 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"abc"=>"123", "def"=>"456"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 223)
+
+
+Started GET "/test3?abc=123&def=456" for 127.0.0.1 at 2022-08-25 14:25:52 +0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MainController#test3 as HTML
+  Parameters: {"abc"=>"123", "def"=>"456"}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 4589)
+
+
+  
+NameError (undefined local variable or method `param' for #<MainController:0x0000000000a9d8>
+
+    param
+    ^^^^^
+Did you mean?  params
+               params=):
+  
+app/controllers/main_controller.rb:11:in `test3'
+Started GET "/test3?abc=123&def=456" for 127.0.0.1 at 2022-08-25 14:28:24 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"abc"=>"123", "def"=>"456"}
+Completed 500 Internal Server Error in 1ms (Allocations: 456)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/main_controller.rb:11:in `test3'
+Started GET "/test3?abc=123&def=456" for 127.0.0.1 at 2022-08-25 14:28:54 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"abc"=>"123", "def"=>"456"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test3.html.erb within layouts/application
+  Rendered main/test3.html.erb within layouts/application (Duration: 0.4ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 114.2ms | Allocations: 34526)
+Completed 200 OK in 127ms (Views: 125.8ms | Allocations: 35597)
+
+
+Started GET "/test3?abc=123&def=456" for 127.0.0.1 at 2022-08-25 14:29:33 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"abc"=>"123", "def"=>"456"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test3.html.erb within layouts/application
+  Rendered main/test3.html.erb within layouts/application (Duration: 0.1ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 64.1ms | Allocations: 14039)
+Completed 200 OK in 68ms (Views: 67.8ms | Allocations: 14700)
+
+
+Started GET "/test3?abc=123&def=456" for 127.0.0.1 at 2022-08-25 14:29:39 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"abc"=>"123", "def"=>"456"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test3.html.erb within layouts/application
+  Rendered main/test3.html.erb within layouts/application (Duration: 0.7ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 3031)
+Completed 200 OK in 20ms (Views: 18.7ms | Allocations: 3907)
+
+
+Started GET "/test3?abc=123&def=456" for 127.0.0.1 at 2022-08-25 14:29:46 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"abc"=>"123", "def"=>"456"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test3.html.erb within layouts/application
+  Rendered main/test3.html.erb within layouts/application (Duration: 0.6ms | Allocations: 176)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 3027)
+Completed 200 OK in 21ms (Views: 20.3ms | Allocations: 3892)
+
+
+Started GET "/test3?abc=123&def=456" for 127.0.0.1 at 2022-08-25 14:29:54 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"abc"=>"123", "def"=>"456"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test3.html.erb within layouts/application
+  Rendered main/test3.html.erb within layouts/application (Duration: 0.5ms | Allocations: 176)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 3035)
+Completed 200 OK in 22ms (Views: 21.7ms | Allocations: 3889)
+
+
+Started GET "/test3?abc=123&def=456" for 127.0.0.1 at 2022-08-25 14:30:04 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"abc"=>"123", "def"=>"456"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test3.html.erb within layouts/application
+  Rendered main/test3.html.erb within layouts/application (Duration: 4.6ms | Allocations: 174)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 3029)
+Completed 200 OK in 27ms (Views: 25.8ms | Allocations: 3883)
+
+
+Started GET "/test3?abc=123&def=456" for 127.0.0.1 at 2022-08-25 14:30:17 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"abc"=>"123", "def"=>"456"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test3.html.erb within layouts/application
+  Rendered main/test3.html.erb within layouts/application (Duration: 0.7ms | Allocations: 190)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3040)
+Completed 200 OK in 25ms (Views: 23.6ms | Allocations: 3894)
+
+
+Started GET "/test3?abc=123&def=456" for 127.0.0.1 at 2022-08-25 14:32:00 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"abc"=>"123", "def"=>"456"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test3.html.erb within layouts/application
+  Rendered main/test3.html.erb within layouts/application (Duration: 0.5ms | Allocations: 193)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3046)
+Completed 200 OK in 19ms (Views: 18.5ms | Allocations: 3900)
+
+
+Started GET "/test3?abc=123&def=456" for 127.0.0.1 at 2022-08-25 14:32:10 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"abc"=>"123", "def"=>"456"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test3.html.erb within layouts/application
+  Rendered main/test3.html.erb within layouts/application (Duration: 0.4ms | Allocations: 192)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3042)
+Completed 200 OK in 16ms (Views: 14.8ms | Allocations: 3896)
+
+
+Started GET "/test3?abc=123&def=456" for 127.0.0.1 at 2022-08-25 14:32:16 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"abc"=>"123", "def"=>"456"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test3.html.erb within layouts/application
+  Rendered main/test3.html.erb within layouts/application (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2416)
+Completed 200 OK in 17ms (Views: 16.3ms | Allocations: 2710)
+
+
+Started GET "/test3?abc=123&def=456" for 127.0.0.1 at 2022-08-25 14:32:22 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"abc"=>"123", "def"=>"456"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test3.html.erb within layouts/application
+  Rendered main/test3.html.erb within layouts/application (Duration: 0.4ms | Allocations: 192)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 3049)
+Completed 200 OK in 21ms (Views: 19.6ms | Allocations: 3884)
+
+

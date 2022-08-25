@@ -8,7 +8,9 @@ class MainController < ApplicationController
   end
 
   def test3
-    render body: "hello"
+    @x1 = params[:abc]
+    @x2 = params[:def]
+    # render body: "hello"
   end
 
   def test4
