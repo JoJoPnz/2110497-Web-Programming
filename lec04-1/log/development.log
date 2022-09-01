@@ -6,3 +6,1228 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 45ms (Views: 24.9ms | ActiveRecord: 0.0ms | Allocations: 5115)
 
 
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 13:49:25 +0700
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 1.3ms | Allocations: 361)
+  Rendered layout layouts/application.html.erb (Duration: 1369.1ms | Allocations: 85812)
+Completed 200 OK in 1402ms (Views: 1384.1ms | ActiveRecord: 0.0ms | Allocations: 89208)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 13:50:04 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 4.7ms | Allocations: 164)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 2999)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.0ms | Allocations: 3894)
+
+
+Started GET "/action_page.php?fname=John&lname=Doe" for 127.0.0.1 at 2022-09-01 13:50:40 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/action_page.php"):
+  
+Started GET "/action_page.php?fname=John&lname=Doe" for 127.0.0.1 at 2022-09-01 13:50:57 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/action_page.php"):
+  
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 13:51:04 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 0.7ms | Allocations: 159)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 3003)
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.0ms | Allocations: 3820)
+
+
+Started GET "/main/test?fname=John&lname=Doe" for 127.0.0.1 at 2022-09-01 13:51:10 +0700
+Processing by MainController#test as HTML
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 2358)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 2646)
+
+
+Started GET "/main/test?fname=John&lname=Doe" for 127.0.0.1 at 2022-09-01 13:51:47 +0700
+Processing by MainController#test as HTML
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 0.1ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 43.1ms | Allocations: 14012)
+Completed 200 OK in 52ms (Views: 51.5ms | Allocations: 14657)
+
+
+Started GET "/main/test?fname=John&lname=Doe" for 127.0.0.1 at 2022-09-01 13:51:49 +0700
+Processing by MainController#test as HTML
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 2388)
+Completed 200 OK in 23ms (Views: 22.7ms | Allocations: 2671)
+
+
+Started GET "/main/test?fname=John&lname=Doe" for 127.0.0.1 at 2022-09-01 13:51:57 +0700
+Processing by MainController#test as HTML
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 2367)
+Completed 200 OK in 13ms (Views: 12.1ms | Allocations: 2633)
+
+
+Started GET "/main/test?fname=John&lname=Doe" for 127.0.0.1 at 2022-09-01 13:58:22 +0700
+Processing by MainController#test as HTML
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 1.2ms | Allocations: 163)
+  Rendered layout layouts/application.html.erb (Duration: 46.4ms | Allocations: 14257)
+Completed 200 OK in 56ms (Views: 54.4ms | Allocations: 15228)
+
+
+Started GET "/main/test?fname=John&lname=Doe" for 127.0.0.1 at 2022-09-01 13:58:26 +0700
+Processing by MainController#test as HTML
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 2361)
+Completed 200 OK in 19ms (Views: 18.3ms | Allocations: 2644)
+
+
+Started GET "/main/test?fname=John&lname=Doe" for 127.0.0.1 at 2022-09-01 13:58:27 +0700
+Processing by MainController#test as HTML
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2379)
+Completed 200 OK in 15ms (Views: 14.9ms | Allocations: 2642)
+
+
+Started GET "/main/test?fname=John&lname=Doe" for 127.0.0.1 at 2022-09-01 13:58:34 +0700
+Processing by MainController#test as HTML
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 2376)
+Completed 200 OK in 13ms (Views: 12.8ms | Allocations: 2642)
+
+
+Started GET "/main/test?fname=John&lname=Doe" for 127.0.0.1 at 2022-09-01 13:59:32 +0700
+Processing by MainController#test as HTML
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 0.7ms | Allocations: 159)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 2990)
+Completed 200 OK in 25ms (Views: 23.4ms | Allocations: 3816)
+
+
+Started GET "/main/test?fname=John&lname=Doe" for 127.0.0.1 at 2022-09-01 13:59:37 +0700
+Processing by MainController#test as HTML
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2394)
+Completed 200 OK in 18ms (Views: 16.6ms | Allocations: 2675)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 13:59:39 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (Allocations: 541)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.0.3.1) lib/action_controller/metal/request_forgery_protection.rb:251:in `handle_unverified_request'
+actionpack (7.0.3.1) lib/action_controller/metal/request_forgery_protection.rb:284:in `handle_unverified_request'
+actionpack (7.0.3.1) lib/action_controller/metal/request_forgery_protection.rb:273:in `verify_authenticity_token'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.3.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.3.1) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.3.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.3.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.3.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.3.1) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.3.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.3.1) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/main/test?fname=John&lname=Doe" for 127.0.0.1 at 2022-09-01 13:59:49 +0700
+Processing by MainController#test as HTML
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 2497)
+Completed 200 OK in 15ms (Views: 14.6ms | Allocations: 2793)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 13:59:51 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 7ms (Allocations: 459)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.0.3.1) lib/action_controller/metal/request_forgery_protection.rb:251:in `handle_unverified_request'
+actionpack (7.0.3.1) lib/action_controller/metal/request_forgery_protection.rb:284:in `handle_unverified_request'
+actionpack (7.0.3.1) lib/action_controller/metal/request_forgery_protection.rb:273:in `verify_authenticity_token'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.3.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.3.1) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.3.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.3.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.3.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.3.1) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.3.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.3.1) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:00:37 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 2ms (Allocations: 481)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.0.3.1) lib/action_controller/metal/request_forgery_protection.rb:251:in `handle_unverified_request'
+actionpack (7.0.3.1) lib/action_controller/metal/request_forgery_protection.rb:284:in `handle_unverified_request'
+actionpack (7.0.3.1) lib/action_controller/metal/request_forgery_protection.rb:273:in `verify_authenticity_token'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.3.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.3.1) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.3.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.3.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.3.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.3.1) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.3.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.3.1) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:00:50 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (Allocations: 458)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.0.3.1) lib/action_controller/metal/request_forgery_protection.rb:251:in `handle_unverified_request'
+actionpack (7.0.3.1) lib/action_controller/metal/request_forgery_protection.rb:284:in `handle_unverified_request'
+actionpack (7.0.3.1) lib/action_controller/metal/request_forgery_protection.rb:273:in `verify_authenticity_token'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.3.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.3.1) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.3.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.3.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.3.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.3.1) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.3.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.3.1) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:01:13 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 3ms (Allocations: 481)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.0.3.1) lib/action_controller/metal/request_forgery_protection.rb:251:in `handle_unverified_request'
+actionpack (7.0.3.1) lib/action_controller/metal/request_forgery_protection.rb:284:in `handle_unverified_request'
+actionpack (7.0.3.1) lib/action_controller/metal/request_forgery_protection.rb:273:in `verify_authenticity_token'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.3.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.3.1) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.3.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.3.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.3.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.3.1) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.3.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.3.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.3.1) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3.1) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 14:01:40 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 0.1ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 55.0ms | Allocations: 14012)
+Completed 200 OK in 67ms (Views: 62.5ms | Allocations: 14610)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:01:47 +0700
+Processing by MainController#test_post as TURBO_STREAM
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+Redirected to 
+Completed 500 Internal Server Error in 6ms (Allocations: 1086)
+
+
+  
+ActionController::Redirecting::UnsafeRedirectError (Unsafe redirect to "http://127.0.0.1:3000main/test2", pass allow_other_host: true to redirect anyway.):
+  
+app/controllers/main_controller.rb:8:in `test_post'
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 14:06:00 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 0.1ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 55.2ms | Allocations: 14018)
+Completed 200 OK in 66ms (Views: 65.0ms | Allocations: 14660)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:06:04 +0700
+Processing by MainController#test_post as TURBO_STREAM
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 8)
+Completed 200 OK in 4ms (Views: 3.4ms | Allocations: 642)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:06:09 +0700
+Processing by MainController#test_post as TURBO_STREAM
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 9ms (Views: 7.9ms | Allocations: 456)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:06:11 +0700
+Processing by MainController#test_post as TURBO_STREAM
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 5ms (Views: 0.8ms | Allocations: 390)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:06:12 +0700
+Processing by MainController#test_post as TURBO_STREAM
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 3ms (Views: 1.8ms | Allocations: 372)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:06:13 +0700
+Processing by MainController#test_post as TURBO_STREAM
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 2ms (Views: 0.5ms | Allocations: 369)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:06:14 +0700
+Processing by MainController#test_post as TURBO_STREAM
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 2ms (Views: 0.7ms | Allocations: 387)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:06:14 +0700
+Processing by MainController#test_post as TURBO_STREAM
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 2ms (Views: 0.6ms | Allocations: 378)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:06:15 +0700
+Processing by MainController#test_post as TURBO_STREAM
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 6ms (Views: 4.7ms | Allocations: 405)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:06:15 +0700
+Processing by MainController#test_post as TURBO_STREAM
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 3ms (Views: 1.5ms | Allocations: 393)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:06:16 +0700
+Processing by MainController#test_post as TURBO_STREAM
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 3ms (Views: 2.1ms | Allocations: 375)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:06:16 +0700
+Processing by MainController#test_post as TURBO_STREAM
+  Parameters: {"fname"=>"John", "lname"=>"Doe"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 8ms (Views: 7.0ms | Allocations: 375)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 14:13:20 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 12.5ms | Allocations: 1796)
+  Rendered layout layouts/application.html.erb (Duration: 106.7ms | Allocations: 16011)
+Completed 200 OK in 120ms (Views: 110.8ms | Allocations: 16977)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 14:13:52 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1467)
+  Rendered layout layouts/application.html.erb (Duration: 30.6ms | Allocations: 4260)
+Completed 200 OK in 42ms (Views: 40.4ms | Allocations: 5129)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 14:14:06 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1459)
+  Rendered layout layouts/application.html.erb (Duration: 29.7ms | Allocations: 4266)
+Completed 200 OK in 41ms (Views: 39.8ms | Allocations: 5108)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 14:14:38 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1917)
+  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 4712)
+Completed 200 OK in 44ms (Views: 43.1ms | Allocations: 5553)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 14:15:40 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1918)
+  Rendered layout layouts/application.html.erb (Duration: 29.6ms | Allocations: 4722)
+Completed 200 OK in 41ms (Views: 39.5ms | Allocations: 5563)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 14:16:00 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2383)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 5178)
+Completed 200 OK in 44ms (Views: 42.9ms | Allocations: 6019)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 14:16:41 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 8.5ms | Allocations: 4245)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 7064)
+Completed 200 OK in 29ms (Views: 27.8ms | Allocations: 7905)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 14:20:33 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 12.4ms | Allocations: 4201)
+  Rendered layout layouts/application.html.erb (Duration: 84.4ms | Allocations: 18378)
+Completed 200 OK in 100ms (Views: 94.9ms | Allocations: 19345)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 14:20:52 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 12.4ms | Allocations: 4247)
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 7048)
+Completed 200 OK in 46ms (Views: 39.2ms | Allocations: 7889)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 14:21:37 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 5.2ms | Allocations: 4246)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 7038)
+Completed 200 OK in 46ms (Views: 44.9ms | Allocations: 7879)
+
+
+Started GET "/main/test?query=ww&query=10&query=wwq&query=2&query=c&query=1&commit=Submit" for 127.0.0.1 at 2022-09-01 14:21:49 +0700
+Processing by MainController#test as HTML
+  Parameters: {"query"=>"1", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 2.9ms | Allocations: 3857)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 6226)
+Completed 200 OK in 20ms (Views: 19.3ms | Allocations: 6510)
+
+
+Started GET "/main/test?query=ww&query=10&query=wwq&query=2&query=c&query=1&commit=Submit" for 127.0.0.1 at 2022-09-01 14:23:24 +0700
+Processing by MainController#test as HTML
+  Parameters: {"query"=>"1", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 9.7ms | Allocations: 4245)
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 7052)
+Completed 200 OK in 48ms (Views: 46.5ms | Allocations: 7875)
+
+
+Started GET "/main/test?query=ww&query=10&query=wwq&query=2&query=c&query=1&commit=Submit" for 127.0.0.1 at 2022-09-01 14:23:37 +0700
+Processing by MainController#test as HTML
+  Parameters: {"query"=>"1", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 4.6ms | Allocations: 4249)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 7060)
+Completed 200 OK in 54ms (Views: 32.3ms | Allocations: 7903)
+
+
+Started GET "/main/test?query=ww&query=10&query=wwq&query=2&query=c&query=1&commit=Submit" for 127.0.0.1 at 2022-09-01 14:24:35 +0700
+Processing by MainController#test as HTML
+  Parameters: {"query"=>"1", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 14.4ms | Allocations: 4590)
+  Rendered layout layouts/application.html.erb (Duration: 29.2ms | Allocations: 7174)
+Completed 200 OK in 45ms (Views: 43.8ms | Allocations: 8019)
+
+
+Started GET "/main/test?query=ww&query=10&query=wwq&query=2&query=c&query=1&commit=Submit" for 127.0.0.1 at 2022-09-01 14:24:39 +0700
+Processing by MainController#test as HTML
+  Parameters: {"query"=>"1", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 5.9ms | Allocations: 4104)
+  Rendered layout layouts/application.html.erb (Duration: 26.4ms | Allocations: 6309)
+Completed 200 OK in 30ms (Views: 27.3ms | Allocations: 6590)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:24:53 +0700
+Processing by MainController#test_post as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"a", "score1"=>"10", "sub2"=>"b", "score2"=>"2", "sub3"=>"c", "score3"=>"3", "commit"=>"Submit"}
+Redirected to 
+Completed 500 Internal Server Error in 10ms (Allocations: 1082)
+
+
+  
+ActionController::Redirecting::UnsafeRedirectError (Unsafe redirect to "http://127.0.0.1:3000main/test2", pass allow_other_host: true to redirect anyway.):
+  
+app/controllers/main_controller.rb:8:in `test_post'
+Started GET "/main/test?query=ww&query=10&query=wwq&query=2&query=c&query=1&commit=Submit" for 127.0.0.1 at 2022-09-01 14:27:41 +0700
+Processing by MainController#test as HTML
+  Parameters: {"query"=>"1", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 29.0ms | Allocations: 4616)
+  Rendered layout layouts/application.html.erb (Duration: 50.2ms | Allocations: 7209)
+Completed 200 OK in 62ms (Views: 61.2ms | Allocations: 8028)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:27:44 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"a", "score1"=>"10", "sub2"=>"b", "score2"=>"2", "sub3"=>"c", "score3"=>"3", "commit"=>"Submit"}
+Redirected to 
+Completed 500 Internal Server Error in 4ms (Allocations: 1055)
+
+
+  
+ActionController::Redirecting::UnsafeRedirectError (Unsafe redirect to "http://127.0.0.1:3000main/test2", pass allow_other_host: true to redirect anyway.):
+  
+app/controllers/main_controller.rb:8:in `test_post'
+Started GET "/main/test?query=ww&query=10&query=wwq&query=2&query=c&query=1&commit=Submit" for 127.0.0.1 at 2022-09-01 14:27:50 +0700
+Processing by MainController#test as HTML
+  Parameters: {"query"=>"1", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 4.2ms | Allocations: 4136)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 6349)
+Completed 200 OK in 23ms (Views: 22.6ms | Allocations: 6626)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 14:29:35 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 16.6ms | Allocations: 4141)
+  Rendered layout layouts/application.html.erb (Duration: 35.5ms | Allocations: 6343)
+Completed 200 OK in 38ms (Views: 37.9ms | Allocations: 6606)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:31:33 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"a", "score1"=>"10", "sub2"=>"b", "score2"=>"2", "sub3"=>"c", "score3"=>"5", "commit"=>"Submit"}
+Redirected to 
+Completed 500 Internal Server Error in 11ms (Allocations: 1025)
+
+
+  
+ActionController::Redirecting::UnsafeRedirectError (Unsafe redirect to "http://127.0.0.1:3000main/test2", pass allow_other_host: true to redirect anyway.):
+  
+app/controllers/main_controller.rb:8:in `test_post'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:31:59 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"a", "score1"=>"10", "sub2"=>"b", "score2"=>"2", "sub3"=>"c", "score3"=>"5", "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test2
+Completed 302 Found in 4ms (Allocations: 551)
+
+
+Started GET "/main/test2" for 127.0.0.1 at 2022-09-01 14:31:59 +0700
+Processing by MainController#test2 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 9ms (Views: 8.6ms | Allocations: 496)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 14:32:14 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 12.6ms | Allocations: 4293)
+  Rendered layout layouts/application.html.erb (Duration: 98.5ms | Allocations: 18025)
+Completed 200 OK in 108ms (Views: 107.6ms | Allocations: 18328)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:32:25 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"a", "score1"=>"10", "sub2"=>"ff", "score2"=>"55", "sub3"=>"s", "score3"=>"2", "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test2
+Completed 302 Found in 5ms (Allocations: 380)
+
+
+Started GET "/main/test2" for 127.0.0.1 at 2022-09-01 14:32:26 +0700
+Processing by MainController#test2 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 3)
+Completed 200 OK in 4ms (Views: 3.2ms | Allocations: 192)
+
+
+Started GET "/main/test2" for 127.0.0.1 at 2022-09-01 14:35:10 +0700
+Processing by MainController#test2 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 8ms (Views: 6.8ms | Allocations: 549)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 14:35:29 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 4.8ms | Allocations: 4300)
+  Rendered layout layouts/application.html.erb (Duration: 54.3ms | Allocations: 18034)
+Completed 200 OK in 62ms (Views: 61.6ms | Allocations: 18337)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:36:20 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"a", "score1"=>"2", "sub2"=>"d", "score2"=>"3", "sub3"=>"e", "score3"=>"5", "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test2
+Completed 302 Found in 12ms (Allocations: 532)
+
+
+Started GET "/main/test2" for 127.0.0.1 at 2022-09-01 14:36:21 +0700
+Processing by MainController#test2 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 7ms (Views: 1.6ms | Allocations: 508)
+
+
+Started GET "/main/test?query=ww&query=10&query=wwq&query=2&query=c&query=1&commit=Submit" for 127.0.0.1 at 2022-09-01 14:37:26 +0700
+Processing by MainController#test as HTML
+  Parameters: {"query"=>"1", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 8.8ms | Allocations: 4296)
+  Rendered layout layouts/application.html.erb (Duration: 80.2ms | Allocations: 18029)
+Completed 200 OK in 89ms (Views: 88.4ms | Allocations: 18332)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 14:37:36 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 3.6ms | Allocations: 4126)
+  Rendered layout layouts/application.html.erb (Duration: 43.9ms | Allocations: 6339)
+Completed 200 OK in 56ms (Views: 55.6ms | Allocations: 6603)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:37:42 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"d", "score1"=>"2", "sub2"=>"d", "score2"=>"0", "sub3"=>"", "score3"=>"", "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test2
+Completed 302 Found in 3ms (Allocations: 377)
+
+
+Started GET "/main/test2" for 127.0.0.1 at 2022-09-01 14:37:42 +0700
+Processing by MainController#test2 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 5ms (Views: 4.7ms | Allocations: 204)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 14:40:55 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 14.5ms | Allocations: 4265)
+  Rendered layout layouts/application.html.erb (Duration: 89.0ms | Allocations: 18009)
+Completed 200 OK in 94ms (Views: 93.1ms | Allocations: 18649)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:41:01 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"ass", "score1"=>"", "sub2"=>"", "score2"=>"", "sub3"=>"", "score3"=>"", "commit"=>"Submit"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 6ms (Views: 5.2ms | Allocations: 445)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:45:50 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"ass", "score1"=>"", "sub2"=>"", "score2"=>"", "sub3"=>"", "score3"=>"", "commit"=>"Submit"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 12ms (Views: 10.2ms | Allocations: 870)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 14:45:53 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 8.2ms | Allocations: 4279)
+  Rendered layout layouts/application.html.erb (Duration: 75.5ms | Allocations: 18013)
+Completed 200 OK in 84ms (Views: 83.2ms | Allocations: 18318)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:46:01 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"a", "score1"=>"10", "sub2"=>"b", "score2"=>"20", "sub3"=>"c", "score3"=>"30", "commit"=>"Submit"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 2ms (Views: 0.6ms | Allocations: 407)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:46:19 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"a", "score1"=>"10", "sub2"=>"b", "score2"=>"20", "sub3"=>"c", "score3"=>"30", "commit"=>"Submit"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 3ms (Views: 1.5ms | Allocations: 853)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 14:46:22 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 8.3ms | Allocations: 4306)
+  Rendered layout layouts/application.html.erb (Duration: 427.6ms | Allocations: 18052)
+Completed 200 OK in 431ms (Views: 430.8ms | Allocations: 18358)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:46:25 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"a", "score1"=>"10", "sub2"=>"b", "score2"=>"20", "sub3"=>"c", "score3"=>"30", "commit"=>"Submit"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 3)
+Completed 200 OK in 5ms (Views: 3.4ms | Allocations: 417)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:46:45 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"a", "score1"=>"10", "sub2"=>"b", "score2"=>"20", "sub3"=>"c", "score3"=>"30", "commit"=>"Submit"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 9ms (Views: 7.4ms | Allocations: 867)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:46:58 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"a", "score1"=>"10", "sub2"=>"b", "score2"=>"20", "sub3"=>"c", "score3"=>"30", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 6ms (Allocations: 812)
+
+
+  
+TypeError (no implicit conversion of Integer into String):
+  
+app/controllers/main_controller.rb:17:in `+'
+app/controllers/main_controller.rb:17:in `test_post'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:47:18 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"a", "score1"=>"10", "sub2"=>"b", "score2"=>"20", "sub3"=>"c", "score3"=>"30", "commit"=>"Submit"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 16ms (Views: 14.4ms | Allocations: 859)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:49:55 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"a", "score1"=>"10", "sub2"=>"b", "score2"=>"20", "sub3"=>"c", "score3"=>"30", "commit"=>"Submit"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 3ms (Views: 1.5ms | Allocations: 875)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:50:08 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"a", "score1"=>"10", "sub2"=>"b", "score2"=>"20", "sub3"=>"c", "score3"=>"30", "commit"=>"Submit"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 12ms (Views: 10.9ms | Allocations: 871)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:50:50 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"a", "score1"=>"10", "sub2"=>"b", "score2"=>"20", "sub3"=>"c", "score3"=>"30", "commit"=>"Submit"}
+  Rendering text template
+  Rendered text template (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 20ms (Views: 9.6ms | Allocations: 863)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:51:30 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"a", "score1"=>"10", "sub2"=>"b", "score2"=>"20", "sub3"=>"c", "score3"=>"30", "commit"=>"Submit"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 14ms (Views: 12.2ms | Allocations: 890)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:51:46 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"a", "score1"=>"10", "sub2"=>"b", "score2"=>"20", "sub3"=>"c", "score3"=>"30", "commit"=>"Submit"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 6ms (Views: 4.4ms | Allocations: 500)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 14:51:50 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 33.8ms | Allocations: 4233)
+  Rendered layout layouts/application.html.erb (Duration: 115.3ms | Allocations: 17963)
+Completed 200 OK in 117ms (Views: 116.1ms | Allocations: 18255)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 14:52:27 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 15.5ms | Allocations: 4599)
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 7175)
+Completed 200 OK in 40ms (Views: 38.7ms | Allocations: 8020)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 14:52:37 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 13.8ms | Allocations: 4592)
+  Rendered layout layouts/application.html.erb (Duration: 29.3ms | Allocations: 7168)
+Completed 200 OK in 44ms (Views: 43.3ms | Allocations: 8010)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:56:41 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"w", "score1"=>"22", "sub2"=>"", "score2"=>"", "sub3"=>"", "score3"=>"", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test_post.html.erb within layouts/application
+  Rendered main/test_post.html.erb within layouts/application (Duration: 0.7ms | Allocations: 159)
+  Rendered layout layouts/application.html.erb (Duration: 146.5ms | Allocations: 14166)
+Completed 200 OK in 213ms (Views: 188.0ms | Allocations: 15451)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 14:56:54 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 12.2ms | Allocations: 4599)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 7182)
+Completed 200 OK in 33ms (Views: 31.9ms | Allocations: 8049)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:56:58 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"q", "score1"=>"55", "sub2"=>"", "score2"=>"", "sub3"=>"", "score3"=>"", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test_post.html.erb within layouts/application
+  Rendered main/test_post.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1132)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1221)
+Completed 500 Internal Server Error in 9ms (Allocations: 1793)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= "sumScore =" @sumScore %>
+):
+1:    <%= "sumScore =" @sumScore %>
+  
+app/views/main/test_post.html.erb:1: syntax error, unexpected instance variable, expecting ')'
+app/views/main/test_post.html.erb:1: syntax error, unexpected instance variable, expecting ')'
+app/views/main/test_post.html.erb:1: syntax error, unexpected instance variable, expecting ')'
+app/views/main/test_post.html.erb:1: syntax error, unexpected instance variable, expecting ')'
+app/views/main/test_post.html.erb:1: syntax error, unexpected instance variable, expecting ')'
+app/views/main/test_post.html.erb:1: syntax error, unexpected instance variable, expecting ')'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 14:59:22 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"q", "score1"=>"55", "sub2"=>"", "score2"=>"", "sub3"=>"", "score3"=>"", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test_post.html.erb within layouts/application
+  Rendered main/test_post.html.erb within layouts/application (Duration: 2.1ms | Allocations: 172)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 2789)
+Completed 200 OK in 32ms (Views: 30.2ms | Allocations: 3833)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 14:59:51 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 15.9ms | Allocations: 4583)
+  Rendered layout layouts/application.html.erb (Duration: 39.4ms | Allocations: 7159)
+Completed 200 OK in 59ms (Views: 58.0ms | Allocations: 8024)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 15:00:00 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"a", "score1"=>"55", "sub2"=>"s", "score2"=>"90", "sub3"=>"", "score3"=>"", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test_post.html.erb within layouts/application
+  Rendered main/test_post.html.erb within layouts/application (Duration: 1.0ms | Allocations: 154)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 2346)
+Completed 200 OK in 35ms (Views: 32.5ms | Allocations: 2913)
+
+

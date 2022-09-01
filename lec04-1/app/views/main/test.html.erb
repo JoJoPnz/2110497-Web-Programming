@@ -1,0 +1,15 @@
+<%= form_with url: "/main/test", method: :post, data: {turbo: false} do |form| %>
+    <%= form.label :query, "ชื่อวิชา" %>
+    <%= form.label :query, "คะแนน" %>
+    <br>
+    <%= form.text_field :sub1 %>
+    <%= form.text_field :score1 %>
+    <br>
+    <%= form.text_field :sub2 %>
+    <%= form.text_field :score2 %>
+    <br>
+    <%= form.text_field :sub3 %>
+    <%= form.text_field :score3 %>
+    <br>
+    <%= form.submit "Submit" %>
+<% end %>
