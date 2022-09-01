@@ -862,3 +862,13 @@ Processing by MainController#calculator as HTML
 Completed 200 OK in 16ms (Views: 15.9ms | Allocations: 2695)
 
 
+Started GET "/main/calculator?grade=55" for 127.0.0.1 at 2022-08-25 15:37:56 +0700
+Processing by MainController#calculator as HTML
+  Parameters: {"grade"=>"55"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/calculator.html.erb within layouts/application
+  Rendered main/calculator.html.erb within layouts/application (Duration: 0.1ms | Allocations: 28)
+  Rendered layout layouts/application.html.erb (Duration: 35.5ms | Allocations: 14058)
+Completed 200 OK in 48ms (Views: 47.6ms | Allocations: 14718)
+
+
