@@ -1231,3 +1231,69 @@ Processing by MainController#test_post as HTML
 Completed 200 OK in 35ms (Views: 32.5ms | Allocations: 2913)
 
 
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 15:04:03 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 30.7ms | Allocations: 4274)
+  Rendered layout layouts/application.html.erb (Duration: 110.5ms | Allocations: 18019)
+Completed 200 OK in 119ms (Views: 118.4ms | Allocations: 18660)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 15:13:16 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"w", "score1"=>"dd", "sub2"=>"", "score2"=>"", "sub3"=>"", "score3"=>"", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test_post.html.erb within layouts/application
+  Rendered main/test_post.html.erb within layouts/application (Duration: 3.2ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 2801)
+Completed 200 OK in 20ms (Views: 18.1ms | Allocations: 3921)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 15:13:20 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 3.7ms | Allocations: 4503)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 6711)
+Completed 200 OK in 29ms (Views: 28.5ms | Allocations: 7069)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 15:13:25 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"q", "score1"=>"1222", "sub2"=>"", "score2"=>"", "sub3"=>"", "score3"=>"", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test_post.html.erb within layouts/application
+  Rendered main/test_post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 2213)
+Completed 200 OK in 15ms (Views: 13.8ms | Allocations: 2694)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 15:13:28 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 4.7ms | Allocations: 4129)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 6328)
+Completed 200 OK in 21ms (Views: 20.4ms | Allocations: 6591)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-01 15:19:40 +0700
+Processing by MainController#test_post as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "sub1"=>"q", "score1"=>"200", "sub2"=>"s", "score2"=>"500", "sub3"=>"s", "score3"=>"600", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test_post.html.erb within layouts/application
+  Rendered main/test_post.html.erb within layouts/application (Duration: 0.1ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 2213)
+Completed 200 OK in 10ms (Views: 8.4ms | Allocations: 2697)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-01 15:19:43 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 114.9ms | Allocations: 4135)
+  Rendered layout layouts/application.html.erb (Duration: 202.6ms | Allocations: 6334)
+Completed 200 OK in 247ms (Views: 246.4ms | Allocations: 6598)
+
+
