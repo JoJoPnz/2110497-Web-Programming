@@ -1,0 +1,17 @@
+<%= form_with url: "/main/test3", method: :post, data: {turbo: false} do |form| %>
+    <%= form.label :query, "ชื่อวิชา" %>
+    <%= form.label :query, "คะแนน" %>
+    <br>
+    <% for i in 1..@amount do %>
+        <%= form.text_field :subject, name: "subject[]" %>
+        <%= form.text_field :score, name: "score[]" %>
+        <br>
+    <% end %>
+    <%= form.submit "Submit" %>
+    <br>
+
+    <% if !@line_empty.nil? %>
+        <%= "Line Empty : #{@line_empty}" %>
+    <% end %>
+    
+<% end %>
