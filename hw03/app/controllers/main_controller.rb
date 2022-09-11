@@ -16,6 +16,10 @@ class MainController < ApplicationController
     @line_empty = []
     @subject_array = params[:subject]
     @score_array = params[:score]
+    if(!@score_array.nil?)
+      @score_array = @score_array.map{ |e| e.to_i}
+    end
+    
     @subject_array_query = ""
     @score_array_query = ""
     @line_empty_query = ""
@@ -43,7 +47,43 @@ class MainController < ApplicationController
         @maxScore = @score_array[i].to_i
         @maxSub = @subject_array[i]
       end
+      # save in database
+      @allSubjects = Subject.where(name: @subject_array[i])
+      if(@allSubjects.empty?)
+        Subject.create(name: @subject_array[i], score: @score_array[i])
+      else
+        for s in @allSubjects
+          s.update(score: @score_array[i])
+        end
+      end
     end
-
   end
+
+  def showList
+    @allSubjects = Subject.all
+  end
+
+  def deleteSubject
+    @id = params[:id].to_i
+    s = Subject.find_by(id: @id)
+    s.destroy
+    redirect_to("/score/list")
+  end
+
+  def editSubject
+    @id = params[:id].to_i
+    @s = Subject.find_by(id: @id)
+    @name = @s.name
+    @score = @s.score
+  end
+
+  def saveSubject
+    @id = params[:id].to_i
+    @name = params[:name]
+    @score = params[:score].to_i
+    s = Subject.find_by(id: @id)
+    s.update(name: @name, score: @score)
+    redirect_to('/score/list')
+  end
+
 end
