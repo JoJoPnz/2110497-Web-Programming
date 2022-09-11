@@ -2,11 +2,21 @@
     <%= form.label :query, "ชื่อวิชา" %>
     <%= form.label :query, "คะแนน" %>
     <br>
+
     <% for i in 1..@amount do %>
-        <%= form.text_field :subject, name: "subject[]" %>
-        <%= form.text_field :score, name: "score[]" %>
+        <% if !@subject_array.nil? and !@score_array.nil? %>
+            <%= form.text_field :subject, name: "subject[]", value: "#{@subject_array[i-1]}" %>
+            <%= form.number_field :score, in: 0..100, name: "score[]", value: "#{@score_array[i-1]}" %>
+        <% else %>
+            <%= form.text_field :subject, name: "subject[]" %>
+            <%= form.number_field :score, in: 0..100, name: "score[]" %>
+        <% end %>
+        <% if !@line_empty.nil? and @line_empty.include?(i) %>
+            <%= "โปรดกรอกรายละเอียดวิชาที่ #{i} ให้ครบ" %>
+        <% end %>
         <br>
     <% end %>
+
     <%= form.submit "Submit" %>
     <br>
 

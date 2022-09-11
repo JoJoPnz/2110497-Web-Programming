@@ -3480,3 +3480,1978 @@ Processing by MainController#test as HTML
 Completed 200 OK in 26ms (Views: 25.2ms | Allocations: 10295)
 
 
+Started GET "/" for 127.0.0.1 at 2022-09-11 11:30:46 +0700
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MainController#test2 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test2.html.erb within layouts/application
+  Rendered main/test2.html.erb within layouts/application (Duration: 21.2ms | Allocations: 2813)
+  Rendered layout layouts/application.html.erb (Duration: 390.9ms | Allocations: 37206)
+Completed 200 OK in 420ms (Views: 404.6ms | ActiveRecord: 0.0ms | Allocations: 40602)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-11 11:30:49 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"1", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2789)
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 5105)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.0ms | Allocations: 5916)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 11:30:53 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["wdqd"], "score"=>[""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=1&lineEmpty=[1]
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 513)
+
+
+Started GET "/main/test/?amount=1&lineEmpty=[1]" for 127.0.0.1 at 2022-09-11 11:30:53 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"1", "lineEmpty"=>"[1]"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2372)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 4565)
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.0ms | Allocations: 4880)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-11 11:30:57 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"1", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2185)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 4376)
+Completed 200 OK in 21ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 4832)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-11 11:31:00 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"3", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 1.8ms | Allocations: 4012)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 6204)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 6679)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 11:31:03 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["qwdwqd", "", ""], "score"=>["", "", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=3&lineEmpty=[1, 2, 3]
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms | Allocations: 385)
+
+
+Started GET "/main/test/?amount=3&lineEmpty=[1,%202,%203]" for 127.0.0.1 at 2022-09-11 11:31:03 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"3", "lineEmpty"=>"[1, 2, 3]"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 5.0ms | Allocations: 4164)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 6355)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 6633)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 11:31:05 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["dwd", "", ""], "score"=>["dwq", "", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=3&lineEmpty=[2, 3]
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 383)
+
+
+Started GET "/main/test/?amount=3&lineEmpty=[2,%203]" for 127.0.0.1 at 2022-09-11 11:31:05 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"3", "lineEmpty"=>"[2, 3]"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 6.4ms | Allocations: 4174)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 6366)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 6647)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 11:31:11 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["qwdqd", "wqd", "wdwqd"], "score"=>["dwq", "wqd", "dw"], "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test3.html.erb within layouts/application
+  Rendered main/test3.html.erb within layouts/application (Duration: 2.3ms | Allocations: 194)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 2386)
+Completed 200 OK in 19ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 2969)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-11 11:50:39 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"1", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 18.0ms | Allocations: 10699)
+  Rendered layout layouts/application.html.erb (Duration: 29.5ms | Allocations: 13315)
+Completed 200 OK in 44ms (Views: 34.0ms | Allocations: 14410)
+
+
+Started GET "/main/test" for 127.0.0.1 at 2022-09-11 11:52:03 +0700
+Processing by MainController#test as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1933)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 4498)
+Completed 200 OK in 22ms (Views: 20.6ms | Allocations: 5437)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-11 11:52:06 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"1", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2217)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 4408)
+Completed 200 OK in 19ms (Views: 17.3ms | Allocations: 4901)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-11 11:53:06 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"1", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2671)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 5236)
+Completed 200 OK in 23ms (Views: 22.4ms | Allocations: 6324)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 11:54:38 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["  "], "score"=>["2"], "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test3.html.erb within layouts/application
+  Rendered main/test3.html.erb within layouts/application (Duration: 0.6ms | Allocations: 158)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 2350)
+Completed 200 OK in 14ms (Views: 12.7ms | Allocations: 2946)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-11 11:55:37 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"1", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2633)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 16559)
+Completed 200 OK in 33ms (Views: 29.7ms | Allocations: 17867)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 11:55:42 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["   "], "score"=>["2"], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=1&lineEmpty=[1]
+Completed 302 Found in 6ms (Allocations: 449)
+
+
+Started GET "/main/test/?amount=1&lineEmpty=[1]" for 127.0.0.1 at 2022-09-11 11:55:42 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"1", "lineEmpty"=>"[1]"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2361)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 4552)
+Completed 200 OK in 10ms (Views: 9.5ms | Allocations: 4842)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 11:59:57 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["ewfe"], "score"=>[""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=1&lineEmpty=[1]
+Completed 302 Found in 7ms (Allocations: 542)
+
+
+Started GET "/main/test/?amount=1&lineEmpty=[1]" for 127.0.0.1 at 2022-09-11 11:59:57 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"1", "lineEmpty"=>"[1]"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 7.2ms | Allocations: 2536)
+  Rendered layout layouts/application.html.erb (Duration: 46.0ms | Allocations: 16173)
+Completed 200 OK in 56ms (Views: 55.2ms | Allocations: 16779)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-11 12:01:39 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"1", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 23.5ms | Allocations: 2280)
+  Rendered layout layouts/application.html.erb (Duration: 72.3ms | Allocations: 16005)
+Completed 200 OK in 78ms (Views: 73.7ms | Allocations: 16938)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:01:43 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>[" "], "score"=>["2"], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=1&lineEmpty[]=[1]
+Completed 302 Found in 4ms (Allocations: 441)
+
+
+Started GET "/main/test/?amount=1&lineEmpty[]=[1]" for 127.0.0.1 at 2022-09-11 12:01:43 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"1", "lineEmpty"=>["[1]"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2372)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 4571)
+Completed 200 OK in 31ms (Views: 29.8ms | Allocations: 4865)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:02:49 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>[" "], "score"=>["2"], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=1&lineEmpty[]=[1]
+Completed 302 Found in 2ms (Allocations: 546)
+
+
+Started GET "/main/test/?amount=1&lineEmpty[]=[1]" for 127.0.0.1 at 2022-09-11 12:02:49 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"1", "lineEmpty"=>["[1]"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 6.8ms | Allocations: 2534)
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 16251)
+Completed 200 OK in 33ms (Views: 32.6ms | Allocations: 16860)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:03:14 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>[" "], "score"=>["1"], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=1&lineEmpty[]=[1]
+Completed 302 Found in 1ms (Allocations: 535)
+
+
+Started GET "/main/test/?amount=1&lineEmpty[]=[1]" for 127.0.0.1 at 2022-09-11 12:03:14 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"1", "lineEmpty"=>["[1]"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2539)
+  Rendered layout layouts/application.html.erb (Duration: 24.9ms | Allocations: 16176)
+Completed 200 OK in 27ms (Views: 26.3ms | Allocations: 16784)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:04:28 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>[" "], "score"=>["2"], "commit"=>"Submit"}
+Completed 500 Internal Server Error in 5ms (Allocations: 775)
+
+
+  
+TypeError (no implicit conversion of Array into String):
+  
+app/controllers/main_controller.rb:20:in `+'
+app/controllers/main_controller.rb:20:in `test3'
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:04:49 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>[""], "score"=>["2"], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=1&lineEmpty[]=[1]
+Completed 302 Found in 2ms (Allocations: 537)
+
+
+Started GET "/main/test/?amount=1&lineEmpty[]=[1]" for 127.0.0.1 at 2022-09-11 12:04:49 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"1", "lineEmpty"=>["[1]"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2552)
+  Rendered layout layouts/application.html.erb (Duration: 45.3ms | Allocations: 16275)
+Completed 200 OK in 56ms (Views: 55.7ms | Allocations: 16881)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:05:38 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>[""], "score"=>["2"], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=1&lineEmpty[]=[1]
+Completed 302 Found in 2ms (Allocations: 559)
+
+
+Started GET "/main/test/?amount=1&lineEmpty[]=[1]" for 127.0.0.1 at 2022-09-11 12:05:39 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"1", "lineEmpty"=>["[1]"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2552)
+  Rendered layout layouts/application.html.erb (Duration: 49.9ms | Allocations: 16269)
+Completed 200 OK in 62ms (Views: 59.1ms | Allocations: 16877)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-11 12:05:50 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"2", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 5.1ms | Allocations: 3143)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 5334)
+Completed 200 OK in 23ms (Views: 15.8ms | Allocations: 5819)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:05:51 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", ""], "score"=>["", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=2&lineEmpty[]=[1, 2]
+Completed 302 Found in 7ms (Allocations: 378)
+
+
+Started GET "/main/test/?amount=2&lineEmpty[]=[1,%202]" for 127.0.0.1 at 2022-09-11 12:05:51 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"2", "lineEmpty"=>["[1, 2]"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 2.5ms | Allocations: 3312)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 5503)
+Completed 200 OK in 27ms (Views: 22.2ms | Allocations: 5783)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:06:05 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", ""], "score"=>["", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=2&lineEmpty[]=[1, 2]
+Completed 302 Found in 2ms (Allocations: 536)
+
+
+Started GET "/main/test/?amount=2&lineEmpty[]=[1,%202]" for 127.0.0.1 at 2022-09-11 12:06:06 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"2", "lineEmpty"=>["[1, 2]"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 4.2ms | Allocations: 3469)
+  Rendered layout layouts/application.html.erb (Duration: 47.8ms | Allocations: 17186)
+Completed 200 OK in 58ms (Views: 55.4ms | Allocations: 17792)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:06:25 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", ""], "score"=>["", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=2&lineEmpty[]=[1, 2]
+Completed 302 Found in 3ms (Allocations: 545)
+
+
+Started GET "/main/test/?amount=2&lineEmpty[]=[1,%202]" for 127.0.0.1 at 2022-09-11 12:06:26 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"2", "lineEmpty"=>["[1, 2]"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 4.7ms | Allocations: 3476)
+  Rendered layout layouts/application.html.erb (Duration: 55.9ms | Allocations: 17200)
+Completed 200 OK in 67ms (Views: 63.1ms | Allocations: 17810)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:11:50 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", ""], "score"=>["", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2
+Completed 302 Found in 5ms (Allocations: 541)
+
+
+Started GET "/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2" for 127.0.0.1 at 2022-09-11 12:11:50 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"2", "lineEmpty"=>["1", "2"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 5.5ms | Allocations: 3480)
+  Rendered layout layouts/application.html.erb (Duration: 43.6ms | Allocations: 17203)
+Completed 200 OK in 55ms (Views: 51.8ms | Allocations: 17809)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:12:13 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", ""], "score"=>["", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2
+Completed 302 Found in 3ms (Allocations: 532)
+
+
+Started GET "/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2" for 127.0.0.1 at 2022-09-11 12:12:13 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"2", "lineEmpty"=>["1", "2"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 5.7ms | Allocations: 3500)
+  Rendered layout layouts/application.html.erb (Duration: 44.0ms | Allocations: 17224)
+Completed 200 OK in 47ms (Views: 46.4ms | Allocations: 17833)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:12:24 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", ""], "score"=>["", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2
+Completed 302 Found in 1ms (Allocations: 547)
+
+
+Started GET "/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2" for 127.0.0.1 at 2022-09-11 12:12:24 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"2", "lineEmpty"=>["1", "2"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 4.8ms | Allocations: 3489)
+  Rendered layout layouts/application.html.erb (Duration: 45.3ms | Allocations: 17212)
+Completed 200 OK in 52ms (Views: 50.0ms | Allocations: 17821)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:12:57 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", ""], "score"=>["", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2
+Completed 302 Found in 7ms (Allocations: 541)
+
+
+Started GET "/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2" for 127.0.0.1 at 2022-09-11 12:12:57 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"2", "lineEmpty"=>["1", "2"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 7.9ms | Allocations: 3468)
+  Rendered layout layouts/application.html.erb (Duration: 40.3ms | Allocations: 17193)
+Completed 200 OK in 45ms (Views: 44.6ms | Allocations: 17802)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:13:13 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", ""], "score"=>["", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2
+Completed 302 Found in 3ms (Allocations: 534)
+
+
+Started GET "/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2" for 127.0.0.1 at 2022-09-11 12:13:13 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"2", "lineEmpty"=>["1", "2"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 3.5ms | Allocations: 3482)
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 17205)
+Completed 200 OK in 37ms (Views: 36.8ms | Allocations: 17811)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:15:04 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", ""], "score"=>["", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2
+Completed 302 Found in 6ms (Allocations: 538)
+
+
+Started GET "/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2" for 127.0.0.1 at 2022-09-11 12:15:04 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"2", "lineEmpty"=>["1", "2"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 3.7ms | Allocations: 3486)
+  Rendered layout layouts/application.html.erb (Duration: 40.2ms | Allocations: 17210)
+Completed 200 OK in 52ms (Views: 51.8ms | Allocations: 17818)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:15:28 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", ""], "score"=>["", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2
+Completed 302 Found in 4ms (Allocations: 390)
+
+
+Started GET "/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2" for 127.0.0.1 at 2022-09-11 12:15:28 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"2", "lineEmpty"=>["1", "2"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 5.8ms | Allocations: 3825)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 6390)
+Completed 200 OK in 33ms (Views: 32.0ms | Allocations: 7313)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:15:48 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", ""], "score"=>["", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2
+Completed 302 Found in 5ms (Allocations: 369)
+
+
+Started GET "/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2" for 127.0.0.1 at 2022-09-11 12:15:48 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"2", "lineEmpty"=>["1", "2"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 64.0ms | Allocations: 15032)
+  Rendered layout layouts/application.html.erb (Duration: 74.0ms | Allocations: 17649)
+Completed 200 OK in 87ms (Views: 86.1ms | Allocations: 18554)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:17:43 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", ""], "score"=>["", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2
+Completed 302 Found in 4ms (Allocations: 378)
+
+
+Started GET "/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2" for 127.0.0.1 at 2022-09-11 12:17:43 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"2", "lineEmpty"=>["1", "2"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 18.8ms | Allocations: 3297)
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 3391)
+Completed 500 Internal Server Error in 32ms (Allocations: 4300)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1)):
+     5:     <% for i in 1..@amount do %>
+     6:         <%= form.text_field :subject, name: "subject[]" %>
+     7:         <%= form.number_field :score, in: 0..100, name: "score[]" %>
+     8:         <% if !@line_empty.nil? && @line_empty.include? #{i} %>
+     9:             <%= form.label "aaa" %>
+    10:         <% end %>
+    11:         <br>
+  
+app/views/main/test.html.erb:8:in `include?'
+app/views/main/test.html.erb:8
+app/views/main/test.html.erb:5
+app/views/main/test.html.erb:1
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:17:59 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", ""], "score"=>["", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2
+Completed 302 Found in 7ms (Allocations: 399)
+
+
+Started GET "/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2" for 127.0.0.1 at 2022-09-11 12:18:00 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"2", "lineEmpty"=>["1", "2"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1391)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 1486)
+Completed 500 Internal Server Error in 16ms (Allocations: 2360)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with url: "/main/test3", method: :post, data: {turbo: false} do |form| %>
+    <%= form.label :query, "ชื่อวิชา" %>
+    <%= form.label :query, "คะแนน" %>
+    <br>
+    <% for i in 1..@amount do %>
+        <%= form.text_field :subject, name: "subject[]" %>
+        <%= form.number_field :score, in: 0..100, name: "score[]" %>
+        <% if !@line_empty.nil? && @line_empty.include?(#{i}) %>
+            <%= form.label "aaa" %>
+        <% end %>
+        <br>
+    <% end %>
+    <%= form.submit "Submit" %>
+    <br>
+
+    <% if !@line_empty.nil? %>
+        <%= "Line Empty : #{@line_empty}" %>
+    <% end %>
+    
+<% end %>
+):
+1:    <%= form_with url: "/main/test3", method: :post, data: {turbo: false} do |form| %>
+2:        <%= form.label :query, "ชื่อวิชา" %>
+3:        <%= form.label :query, "คะแนน" %>
+4:        <br>
+5:        <% for i in 1..@amount do %>
+6:            <%= form.text_field :subject, name: "subject[]" %>
+7:            <%= form.number_field :score, in: 0..100, name: "score[]" %>
+8:            <% if !@line_empty.nil? && @line_empty.include?(#{i}) %>
+9:                <%= form.label "aaa" %>
+10:            <% end %>
+11:            <br>
+12:        <% end %>
+13:        <%= form.submit "Submit" %>
+14:        <br>
+15:    
+16:        <% if !@line_empty.nil? %>
+17:            <%= "Line Empty : #{@line_empty}" %>
+18:        <% end %>
+19:        
+20:    <% end %>
+  
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:18:24 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", ""], "score"=>["", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2
+Completed 302 Found in 4ms (Allocations: 387)
+
+
+Started GET "/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2" for 127.0.0.1 at 2022-09-11 12:18:24 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"2", "lineEmpty"=>["1", "2"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 9.0ms | Allocations: 1335)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 1424)
+Completed 500 Internal Server Error in 12ms (Allocations: 1694)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with url: "/main/test3", method: :post, data: {turbo: false} do |form| %>
+    <%= form.label :query, "ชื่อวิชา" %>
+    <%= form.label :query, "คะแนน" %>
+    <br>
+    <% for i in 1..@amount do %>
+        <%= form.text_field :subject, name: "subject[]" %>
+        <%= form.number_field :score, in: 0..100, name: "score[]" %>
+        <% if !@line_empty.nil? && @line_empty.include?(#{i}) %>
+            <%= form.label "aaa" %>
+        <% end %>
+        <br>
+    <% end %>
+    <%= form.submit "Submit" %>
+    <br>
+
+    <% if !@line_empty.nil? %>
+        <%= "Line Empty : #{@line_empty}" %>
+    <% end %>
+    
+<% end %>
+):
+1:    <%= form_with url: "/main/test3", method: :post, data: {turbo: false} do |form| %>
+2:        <%= form.label :query, "ชื่อวิชา" %>
+3:        <%= form.label :query, "คะแนน" %>
+4:        <br>
+5:        <% for i in 1..@amount do %>
+6:            <%= form.text_field :subject, name: "subject[]" %>
+7:            <%= form.number_field :score, in: 0..100, name: "score[]" %>
+8:            <% if !@line_empty.nil? && @line_empty.include?(#{i}) %>
+9:                <%= form.label "aaa" %>
+10:            <% end %>
+11:            <br>
+12:        <% end %>
+13:        <%= form.submit "Submit" %>
+14:        <br>
+15:    
+16:        <% if !@line_empty.nil? %>
+17:            <%= "Line Empty : #{@line_empty}" %>
+18:        <% end %>
+19:        
+20:    <% end %>
+  
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:19:12 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", ""], "score"=>["", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2
+Completed 302 Found in 2ms (Allocations: 350)
+
+
+Started GET "/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2" for 127.0.0.1 at 2022-09-11 12:19:12 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"2", "lineEmpty"=>["1", "2"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1379)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 1474)
+Completed 500 Internal Server Error in 8ms (Allocations: 2328)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with url: "/main/test3", method: :post, data: {turbo: false} do |form| %>
+    <%= form.label :query, "ชื่อวิชา" %>
+    <%= form.label :query, "คะแนน" %>
+    <br>
+    <% for i in 1..@amount do %>
+        <%= form.text_field :subject, name: "subject[]" %>
+        <%= form.number_field :score, in: 0..100, name: "score[]" %>
+        <% if !@line_empty.nil? && @line_empty.include?(#{i}) %>
+            <%= "aaa" %>
+        <% end %>
+        <br>
+    <% end %>
+    <%= form.submit "Submit" %>
+    <br>
+
+    <% if !@line_empty.nil? %>
+        <%= "Line Empty : #{@line_empty}" %>
+    <% end %>
+    
+<% end %>
+):
+1:    <%= form_with url: "/main/test3", method: :post, data: {turbo: false} do |form| %>
+2:        <%= form.label :query, "ชื่อวิชา" %>
+3:        <%= form.label :query, "คะแนน" %>
+4:        <br>
+5:        <% for i in 1..@amount do %>
+6:            <%= form.text_field :subject, name: "subject[]" %>
+7:            <%= form.number_field :score, in: 0..100, name: "score[]" %>
+8:            <% if !@line_empty.nil? && @line_empty.include?(#{i}) %>
+9:                <%= "aaa" %>
+10:            <% end %>
+11:            <br>
+12:        <% end %>
+13:        <%= form.submit "Submit" %>
+14:        <br>
+15:    
+16:        <% if !@line_empty.nil? %>
+17:            <%= "Line Empty : #{@line_empty}" %>
+18:        <% end %>
+19:        
+20:    <% end %>
+  
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+Started POST "/main/test" for 127.0.0.1 at 2022-09-11 12:19:16 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"2", "commit"=>"Submit"}
+Completed 500 Internal Server Error in 4ms (Allocations: 1480)
+
+
+  
+NoMethodError (undefined method `map' for nil:NilClass
+
+    @line_empty = @line_empty.map{ |e| e.to_i}
+                             ^^^^):
+  
+app/controllers/main_controller.rb:5:in `test'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-11 12:19:49 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"2", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1314)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1409)
+Completed 500 Internal Server Error in 8ms (Allocations: 2324)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with url: "/main/test3", method: :post, data: {turbo: false} do |form| %>
+    <%= form.label :query, "ชื่อวิชา" %>
+    <%= form.label :query, "คะแนน" %>
+    <br>
+    <% for i in 1..@amount do %>
+        <%= form.text_field :subject, name: "subject[]" %>
+        <%= form.number_field :score, in: 0..100, name: "score[]" %>
+        <% if !@line_empty.nil? && @line_empty.include?(#{i}) %>
+            <%= "aaa" %>
+        <% end %>
+        <br>
+    <% end %>
+    <%= form.submit "Submit" %>
+    <br>
+
+    <% if !@line_empty.nil? %>
+        <%= "Line Empty : #{@line_empty}" %>
+    <% end %>
+    
+<% end %>
+):
+1:    <%= form_with url: "/main/test3", method: :post, data: {turbo: false} do |form| %>
+2:        <%= form.label :query, "ชื่อวิชา" %>
+3:        <%= form.label :query, "คะแนน" %>
+4:        <br>
+5:        <% for i in 1..@amount do %>
+6:            <%= form.text_field :subject, name: "subject[]" %>
+7:            <%= form.number_field :score, in: 0..100, name: "score[]" %>
+8:            <% if !@line_empty.nil? && @line_empty.include?(#{i}) %>
+9:                <%= "aaa" %>
+10:            <% end %>
+11:            <br>
+12:        <% end %>
+13:        <%= form.submit "Submit" %>
+14:        <br>
+15:    
+16:        <% if !@line_empty.nil? %>
+17:            <%= "Line Empty : #{@line_empty}" %>
+18:        <% end %>
+19:        
+20:    <% end %>
+  
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+Started POST "/main/test" for 127.0.0.1 at 2022-09-11 12:20:47 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"2", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 13.3ms | Allocations: 3655)
+  Rendered layout layouts/application.html.erb (Duration: 53.9ms | Allocations: 17585)
+Completed 200 OK in 64ms (Views: 62.0ms | Allocations: 18752)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:20:48 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", ""], "score"=>["", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2
+Completed 302 Found in 6ms (Allocations: 432)
+
+
+Started GET "/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2" for 127.0.0.1 at 2022-09-11 12:20:48 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"2", "lineEmpty"=>["1", "2"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 9.4ms | Allocations: 3305)
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 5496)
+Completed 200 OK in 26ms (Views: 25.8ms | Allocations: 5792)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:20:54 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", ""], "score"=>["", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2
+Completed 302 Found in 1ms (Allocations: 377)
+
+
+Started GET "/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2" for 127.0.0.1 at 2022-09-11 12:20:54 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"2", "lineEmpty"=>["1", "2"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1379)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 1474)
+Completed 500 Internal Server Error in 18ms (Allocations: 2334)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with url: "/main/test3", method: :post, data: {turbo: false} do |form| %>
+    <%= form.label :query, "ชื่อวิชา" %>
+    <%= form.label :query, "คะแนน" %>
+    <br>
+    <% for i in 1..@amount do %>
+        <%= form.text_field :subject, name: "subject[]" %>
+        <%= form.number_field :score, in: 0..100, name: "score[]" %>
+        <% if !@line_empty.nil? and @line_empty.include?(#{i}) %>
+            <%= "aaa" %>
+        <% end %>
+        <br>
+    <% end %>
+    <%= form.submit "Submit" %>
+    <br>
+
+    <% if !@line_empty.nil? %>
+        <%= "Line Empty : #{@line_empty}" %>
+    <% end %>
+    
+<% end %>
+):
+1:    <%= form_with url: "/main/test3", method: :post, data: {turbo: false} do |form| %>
+2:        <%= form.label :query, "ชื่อวิชา" %>
+3:        <%= form.label :query, "คะแนน" %>
+4:        <br>
+5:        <% for i in 1..@amount do %>
+6:            <%= form.text_field :subject, name: "subject[]" %>
+7:            <%= form.number_field :score, in: 0..100, name: "score[]" %>
+8:            <% if !@line_empty.nil? and @line_empty.include?(#{i}) %>
+9:                <%= "aaa" %>
+10:            <% end %>
+11:            <br>
+12:        <% end %>
+13:        <%= form.submit "Submit" %>
+14:        <br>
+15:    
+16:        <% if !@line_empty.nil? %>
+17:            <%= "Line Empty : #{@line_empty}" %>
+18:        <% end %>
+19:        
+20:    <% end %>
+  
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:25:37 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", ""], "score"=>["", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2
+Completed 302 Found in 1ms (Allocations: 408)
+
+
+Started GET "/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2" for 127.0.0.1 at 2022-09-11 12:25:37 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"2", "lineEmpty"=>["1", "2"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 21.4ms | Allocations: 3880)
+  Rendered layout layouts/application.html.erb (Duration: 37.6ms | Allocations: 6463)
+Completed 200 OK in 48ms (Views: 47.1ms | Allocations: 7360)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:25:47 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", ""], "score"=>["", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2
+Completed 302 Found in 7ms (Allocations: 387)
+
+
+Started GET "/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2" for 127.0.0.1 at 2022-09-11 12:25:47 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"2", "lineEmpty"=>["1", "2"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 9.1ms | Allocations: 3893)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 6458)
+Completed 200 OK in 33ms (Views: 31.6ms | Allocations: 7360)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:25:59 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", ""], "score"=>["", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2
+Completed 302 Found in 4ms (Allocations: 396)
+
+
+Started GET "/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2" for 127.0.0.1 at 2022-09-11 12:25:59 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"2", "lineEmpty"=>["1", "2"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1379)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 1474)
+Completed 500 Internal Server Error in 15ms (Allocations: 2348)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with url: "/main/test3", method: :post, data: {turbo: false} do |form| %>
+    <%= form.label :query, "ชื่อวิชา" %>
+    <%= form.label :query, "คะแนน" %>
+    <br>
+    <% for i in 1..@amount do %>
+        <%= form.text_field :subject, name: "subject[]" %>
+        <%= form.number_field :score, in: 0..100, name: "score[]" %>
+        <% if !@line_empty.nil? and @line_empty.include?(#{i}) %>
+            <%= "aaa" %>
+        <% end %>
+        <br>
+    <% end %>
+    <%= form.submit "Submit" %>
+    <br>
+
+    <% if !@line_empty.nil? %>
+        <%= "Line Empty : #{@line_empty}" %>
+    <% end %>
+    
+<% end %>
+):
+1:    <%= form_with url: "/main/test3", method: :post, data: {turbo: false} do |form| %>
+2:        <%= form.label :query, "ชื่อวิชา" %>
+3:        <%= form.label :query, "คะแนน" %>
+4:        <br>
+5:        <% for i in 1..@amount do %>
+6:            <%= form.text_field :subject, name: "subject[]" %>
+7:            <%= form.number_field :score, in: 0..100, name: "score[]" %>
+8:            <% if !@line_empty.nil? and @line_empty.include?(#{i}) %>
+9:                <%= "aaa" %>
+10:            <% end %>
+11:            <br>
+12:        <% end %>
+13:        <%= form.submit "Submit" %>
+14:        <br>
+15:    
+16:        <% if !@line_empty.nil? %>
+17:            <%= "Line Empty : #{@line_empty}" %>
+18:        <% end %>
+19:        
+20:    <% end %>
+  
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+app/views/main/test.html.erb:9: syntax error, unexpected ';', expecting ')'
+app/views/main/test.html.erb:22: syntax error, unexpected `end', expecting end-of-input
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:26:08 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", ""], "score"=>["", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2
+Completed 302 Found in 7ms (Allocations: 404)
+
+
+Started GET "/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2" for 127.0.0.1 at 2022-09-11 12:26:08 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"2", "lineEmpty"=>["1", "2"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 15.1ms | Allocations: 3880)
+  Rendered layout layouts/application.html.erb (Duration: 42.4ms | Allocations: 6456)
+Completed 200 OK in 56ms (Views: 54.4ms | Allocations: 7352)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:26:09 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", ""], "score"=>["", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2
+Completed 302 Found in 3ms (Allocations: 393)
+
+
+Started GET "/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2" for 127.0.0.1 at 2022-09-11 12:26:09 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"2", "lineEmpty"=>["1", "2"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 3.4ms | Allocations: 3302)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 5493)
+Completed 200 OK in 31ms (Views: 29.5ms | Allocations: 5787)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:26:12 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", "wqd"], "score"=>["", "2"], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=2&lineEmpty[]=1
+Completed 302 Found in 4ms (Allocations: 363)
+
+
+Started GET "/main/test/?amount=2&lineEmpty[]=1" for 127.0.0.1 at 2022-09-11 12:26:12 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"2", "lineEmpty"=>["1"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 2.6ms | Allocations: 3317)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 5508)
+Completed 200 OK in 16ms (Views: 14.8ms | Allocations: 5788)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:27:15 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", ""], "score"=>["", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2
+Completed 302 Found in 1ms (Allocations: 350)
+
+
+Started GET "/main/test/?amount=2&lineEmpty[]=1&lineEmpty[]=2" for 127.0.0.1 at 2022-09-11 12:27:15 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"2", "lineEmpty"=>["1", "2"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 6.5ms | Allocations: 3866)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 6431)
+Completed 200 OK in 32ms (Views: 31.4ms | Allocations: 7319)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 12:27:38 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", "ไๆก"], "score"=>["", "1"], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=2&lineEmpty[]=1
+Completed 302 Found in 3ms (Allocations: 392)
+
+
+Started GET "/main/test/?amount=2&lineEmpty[]=1" for 127.0.0.1 at 2022-09-11 12:27:38 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"2", "lineEmpty"=>["1"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 11.5ms | Allocations: 3303)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 5494)
+Completed 200 OK in 22ms (Views: 21.5ms | Allocations: 5788)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-11 15:44:44 +0700
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MainController#test2 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test2.html.erb within layouts/application
+  Rendered main/test2.html.erb within layouts/application (Duration: 30.6ms | Allocations: 2813)
+  Rendered layout layouts/application.html.erb (Duration: 596.3ms | Allocations: 37236)
+Completed 200 OK in 650ms (Views: 618.6ms | ActiveRecord: 0.0ms | Allocations: 40632)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-11 15:44:55 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"1", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 12.5ms | Allocations: 3002)
+  Rendered layout layouts/application.html.erb (Duration: 31.3ms | Allocations: 5318)
+Completed 200 OK in 40ms (Views: 33.6ms | ActiveRecord: 0.0ms | Allocations: 6133)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 15:45:05 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>[""], "score"=>[""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=1&lineEmpty[]=1
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 485)
+
+
+Started GET "/main/test/?amount=1&lineEmpty[]=1" for 127.0.0.1 at 2022-09-11 15:45:05 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"1", "lineEmpty"=>["1"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2403)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 4596)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 4914)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-11 15:45:27 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"3", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 9.3ms | Allocations: 4078)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 6270)
+Completed 200 OK in 17ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 6741)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 15:45:37 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["www", "qqq", "ww"], "score"=>["2", "1", "33"], "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test3.html.erb within layouts/application
+  Rendered main/test3.html.erb within layouts/application (Duration: 1.4ms | Allocations: 194)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 2387)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.0ms | Allocations: 2954)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-11 15:46:10 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"3", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 6.5ms | Allocations: 4077)
+  Rendered layout layouts/application.html.erb (Duration: 28.0ms | Allocations: 6268)
+Completed 200 OK in 35ms (Views: 32.9ms | ActiveRecord: 0.0ms | Allocations: 6745)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 15:46:12 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["ff", "", ""], "score"=>["", "", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=3&lineEmpty[]=1&lineEmpty[]=2&lineEmpty[]=3
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 341)
+
+
+Started GET "/main/test/?amount=3&lineEmpty[]=1&lineEmpty[]=2&lineEmpty[]=3" for 127.0.0.1 at 2022-09-11 15:46:12 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"3", "lineEmpty"=>["1", "2", "3"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 2.4ms | Allocations: 4256)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 6448)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 6736)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-11 15:53:30 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"3", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1687)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 1791)
+Completed 500 Internal Server Error in 7ms (Allocations: 3087)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with url: "/main/test3", method: :post, data: {turbo: false} do |form| %>
+    <%= form.label :query, "ชื่อวิชา" %>
+    <%= form.label :query, "คะแนน" %>
+    <br>
+
+    <% for i in 1..@amount do %>
+        <% if !@subject_array.nil? and !@score_array.nil? %>
+            <%= form.text_field :subject, name: "subject[]", value: #{@subject_array[i-1]} %>
+            <%= form.number_field :score, in: 0..100, name: "score[]", value: #{@score_array[i-1]} %>
+        <% else %>
+            <%= form.text_field :subject, name: "subject[]" %>
+            <%= form.number_field :score, in: 0..100, name: "score[]" %>
+        <% end %>
+        <% if !@line_empty.nil? and @line_empty.include?(i) %>
+            <%= "โปรดกรอกรายละเอียดวิชาที่ #{i} ให้ครบ" %>
+        <% end %>
+        <br>
+    <% end %>
+
+    <%= form.submit "Submit" %>
+    <br>
+
+    <% if !@line_empty.nil? %>
+        <%= "Line Empty : #{@line_empty}" %>
+    <% end %>
+    
+<% end %>
+):
+1:    <%= form_with url: "/main/test3", method: :post, data: {turbo: false} do |form| %>
+2:        <%= form.label :query, "ชื่อวิชา" %>
+3:        <%= form.label :query, "คะแนน" %>
+4:        <br>
+5:    
+6:        <% for i in 1..@amount do %>
+7:            <% if !@subject_array.nil? and !@score_array.nil? %>
+8:                <%= form.text_field :subject, name: "subject[]", value: #{@subject_array[i-1]} %>
+9:                <%= form.number_field :score, in: 0..100, name: "score[]", value: #{@score_array[i-1]} %>
+10:            <% else %>
+11:                <%= form.text_field :subject, name: "subject[]" %>
+12:                <%= form.number_field :score, in: 0..100, name: "score[]" %>
+13:            <% end %>
+14:            <% if !@line_empty.nil? and @line_empty.include?(i) %>
+15:                <%= "โปรดกรอกรายละเอียดวิชาที่ #{i} ให้ครบ" %>
+16:            <% end %>
+17:            <br>
+18:        <% end %>
+19:    
+20:        <%= form.submit "Submit" %>
+21:        <br>
+22:    
+23:        <% if !@line_empty.nil? %>
+24:            <%= "Line Empty : #{@line_empty}" %>
+25:        <% end %>
+26:        
+27:    <% end %>
+  
+app/views/main/test.html.erb:21: syntax error, unexpected '<', expecting ')'
+app/views/main/test.html.erb:29: unterminated string meets end of file
+app/views/main/test.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/main/test.html.erb:21: syntax error, unexpected '<', expecting ')'
+app/views/main/test.html.erb:29: unterminated string meets end of file
+app/views/main/test.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/main/test.html.erb:21: syntax error, unexpected '<', expecting ')'
+app/views/main/test.html.erb:29: unterminated string meets end of file
+app/views/main/test.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/main/test.html.erb:21: syntax error, unexpected '<', expecting ')'
+app/views/main/test.html.erb:29: unterminated string meets end of file
+app/views/main/test.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/main/test.html.erb:21: syntax error, unexpected '<', expecting ')'
+app/views/main/test.html.erb:29: unterminated string meets end of file
+app/views/main/test.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/main/test.html.erb:21: syntax error, unexpected '<', expecting ')'
+app/views/main/test.html.erb:29: unterminated string meets end of file
+app/views/main/test.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-11 15:54:14 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"3", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1418)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 1513)
+Completed 500 Internal Server Error in 12ms (Allocations: 2653)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with url: "/main/test3", method: :post, data: {turbo: false} do |form| %>
+    <%= form.label :query, "ชื่อวิชา" %>
+    <%= form.label :query, "คะแนน" %>
+    <br>
+
+    <% for i in 1..@amount do %>
+        # <% if !@subject_array.nil? and !@score_array.nil? %>
+        #     <%= form.text_field :subject, name: "subject[]", value: #{@subject_array[i-1]} %>
+        #     <%= form.number_field :score, in: 0..100, name: "score[]", value: #{@score_array[i-1]} %>
+        # <% else %>
+            <%= form.text_field :subject, name: "subject[]" %>
+            <%= form.number_field :score, in: 0..100, name: "score[]" %>
+        # <% end %>
+        <% if !@line_empty.nil? and @line_empty.include?(i) %>
+            <%= "โปรดกรอกรายละเอียดวิชาที่ #{i} ให้ครบ" %>
+        <% end %>
+        <br>
+    <% end %>
+
+    <%= form.submit "Submit" %>
+    <br>
+
+    <% if !@line_empty.nil? %>
+        <%= "Line Empty : #{@line_empty}" %>
+    <% end %>
+    
+<% end %>
+):
+1:    <%= form_with url: "/main/test3", method: :post, data: {turbo: false} do |form| %>
+2:        <%= form.label :query, "ชื่อวิชา" %>
+3:        <%= form.label :query, "คะแนน" %>
+4:        <br>
+5:    
+6:        <% for i in 1..@amount do %>
+7:            # <% if !@subject_array.nil? and !@score_array.nil? %>
+8:            #     <%= form.text_field :subject, name: "subject[]", value: #{@subject_array[i-1]} %>
+9:            #     <%= form.number_field :score, in: 0..100, name: "score[]", value: #{@score_array[i-1]} %>
+10:            # <% else %>
+11:                <%= form.text_field :subject, name: "subject[]" %>
+12:                <%= form.number_field :score, in: 0..100, name: "score[]" %>
+13:            # <% end %>
+14:            <% if !@line_empty.nil? and @line_empty.include?(i) %>
+15:                <%= "โปรดกรอกรายละเอียดวิชาที่ #{i} ให้ครบ" %>
+16:            <% end %>
+17:            <br>
+18:        <% end %>
+19:    
+20:        <%= form.submit "Submit" %>
+21:        <br>
+22:    
+23:        <% if !@line_empty.nil? %>
+24:            <%= "Line Empty : #{@line_empty}" %>
+25:        <% end %>
+26:        
+27:    <% end %>
+  
+app/views/main/test.html.erb:21: syntax error, unexpected '<', expecting ')'
+app/views/main/test.html.erb:29: unterminated string meets end of file
+app/views/main/test.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/main/test.html.erb:21: syntax error, unexpected '<', expecting ')'
+app/views/main/test.html.erb:29: unterminated string meets end of file
+app/views/main/test.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/main/test.html.erb:21: syntax error, unexpected '<', expecting ')'
+app/views/main/test.html.erb:29: unterminated string meets end of file
+app/views/main/test.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/main/test.html.erb:21: syntax error, unexpected '<', expecting ')'
+app/views/main/test.html.erb:29: unterminated string meets end of file
+app/views/main/test.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/main/test.html.erb:21: syntax error, unexpected '<', expecting ')'
+app/views/main/test.html.erb:29: unterminated string meets end of file
+app/views/main/test.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+app/views/main/test.html.erb:21: syntax error, unexpected '<', expecting ')'
+app/views/main/test.html.erb:29: unterminated string meets end of file
+app/views/main/test.html.erb:29: syntax error, unexpected end-of-input, expecting ')'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-11 15:54:26 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"3", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 6.2ms | Allocations: 4596)
+  Rendered layout layouts/application.html.erb (Duration: 49.0ms | Allocations: 18520)
+Completed 200 OK in 62ms (Views: 60.5ms | Allocations: 19684)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-11 15:54:35 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"3", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1402)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 1497)
+Completed 500 Internal Server Error in 21ms (Allocations: 2618)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with url: "/main/test3", method: :post, data: {turbo: false} do |form| %>
+    <%= form.label :query, "ชื่อวิชา" %>
+    <%= form.label :query, "คะแนน" %>
+    <br>
+
+    <% for i in 1..@amount do %>
+        <% if !@subject_array.nil? and !@score_array.nil? %>
+            <%= form.text_field :subject, name: "subject[]", value: #{@subject_array[i-1]} %>
+            <%= form.number_field :score, in: 0..100, name: "score[]", value: #{@score_array[i-1]} %>
+            <%= form.text_field :subject, name: "subject[]" %>
+            <%= form.number_field :score, in: 0..100, name: "score[]" %>
+        <% end %>
+        <% if !@line_empty.nil? and @line_empty.include?(i) %>
+            <%= "โปรดกรอกรายละเอียดวิชาที่ #{i} ให้ครบ" %>
+        <% end %>
+        <br>
+    <% end %>
+
+    <%= form.submit "Submit" %>
+    <br>
+
+    <% if !@line_empty.nil? %>
+        <%= "Line Empty : #{@line_empty}" %>
+    <% end %>
+    
+<% end %>
+):
+1:    <%= form_with url: "/main/test3", method: :post, data: {turbo: false} do |form| %>
+2:        <%= form.label :query, "ชื่อวิชา" %>
+3:        <%= form.label :query, "คะแนน" %>
+4:        <br>
+5:    
+6:        <% for i in 1..@amount do %>
+7:            <% if !@subject_array.nil? and !@score_array.nil? %>
+8:                <%= form.text_field :subject, name: "subject[]", value: #{@subject_array[i-1]} %>
+9:                <%= form.number_field :score, in: 0..100, name: "score[]", value: #{@score_array[i-1]} %>
+10:                <%= form.text_field :subject, name: "subject[]" %>
+11:                <%= form.number_field :score, in: 0..100, name: "score[]" %>
+12:            <% end %>
+13:            <% if !@line_empty.nil? and @line_empty.include?(i) %>
+14:                <%= "โปรดกรอกรายละเอียดวิชาที่ #{i} ให้ครบ" %>
+15:            <% end %>
+16:            <br>
+17:        <% end %>
+18:    
+19:        <%= form.submit "Submit" %>
+20:        <br>
+21:    
+22:        <% if !@line_empty.nil? %>
+23:            <%= "Line Empty : #{@line_empty}" %>
+24:        <% end %>
+25:        
+26:    <% end %>
+  
+app/views/main/test.html.erb:20: syntax error, unexpected '<', expecting ')'
+app/views/main/test.html.erb:28: unterminated string meets end of file
+app/views/main/test.html.erb:28: syntax error, unexpected end-of-input, expecting ')'
+app/views/main/test.html.erb:20: syntax error, unexpected '<', expecting ')'
+app/views/main/test.html.erb:28: unterminated string meets end of file
+app/views/main/test.html.erb:28: syntax error, unexpected end-of-input, expecting ')'
+app/views/main/test.html.erb:20: syntax error, unexpected '<', expecting ')'
+app/views/main/test.html.erb:28: unterminated string meets end of file
+app/views/main/test.html.erb:28: syntax error, unexpected end-of-input, expecting ')'
+app/views/main/test.html.erb:20: syntax error, unexpected '<', expecting ')'
+app/views/main/test.html.erb:28: unterminated string meets end of file
+app/views/main/test.html.erb:28: syntax error, unexpected end-of-input, expecting ')'
+app/views/main/test.html.erb:20: syntax error, unexpected '<', expecting ')'
+app/views/main/test.html.erb:28: unterminated string meets end of file
+app/views/main/test.html.erb:28: syntax error, unexpected end-of-input, expecting ')'
+app/views/main/test.html.erb:20: syntax error, unexpected '<', expecting ')'
+app/views/main/test.html.erb:28: unterminated string meets end of file
+app/views/main/test.html.erb:28: syntax error, unexpected end-of-input, expecting ')'
+Started POST "/main/test" for 127.0.0.1 at 2022-09-11 15:55:00 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"3", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 9.4ms | Allocations: 4637)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 7217)
+Completed 200 OK in 30ms (Views: 28.4ms | Allocations: 8369)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 15:55:18 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", "", ""], "score"=>["", "", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=3&subject[]=["", "", ""]&score[]=["", "", ""]&lineEmpty[]=1&lineEmpty[]=2&lineEmpty[]=3
+Completed 302 Found in 2ms (Allocations: 527)
+
+
+Started GET "/main/test/?amount=3&subject[]=[%22%22,%20%22%22,%20%22%22]&score[]=[%22%22,%20%22%22,%20%22%22]&lineEmpty[]=1&lineEmpty[]=2&lineEmpty[]=3" for 127.0.0.1 at 2022-09-11 15:55:18 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"3", "subject"=>["[\"\", \"\", \"\"]"], "score"=>["[\"\", \"\", \"\"]"], "lineEmpty"=>["1", "2", "3"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1458)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 3649)
+Completed 200 OK in 22ms (Views: 20.9ms | Allocations: 3951)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 15:55:51 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", "", ""], "score"=>["", "", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=3&subject[]=["", "", ""]&score[]=["", "", ""]&lineEmpty[]=1&lineEmpty[]=2&lineEmpty[]=3
+Completed 302 Found in 4ms (Allocations: 481)
+
+
+Started GET "/main/test/?amount=3&subject[]=[%22%22,%20%22%22,%20%22%22]&score[]=[%22%22,%20%22%22,%20%22%22]&lineEmpty[]=1&lineEmpty[]=2&lineEmpty[]=3" for 127.0.0.1 at 2022-09-11 15:55:51 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"3", "subject"=>["[\"\", \"\", \"\"]"], "score"=>["[\"\", \"\", \"\"]"], "lineEmpty"=>["1", "2", "3"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 5.5ms | Allocations: 4955)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 7520)
+Completed 200 OK in 19ms (Views: 16.4ms | Allocations: 8414)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-11 15:55:53 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"3", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 8.8ms | Allocations: 4079)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 6270)
+Completed 200 OK in 20ms (Views: 19.1ms | Allocations: 6777)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 15:55:55 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", "", ""], "score"=>["", "", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=3&subject[]=["", "", ""]&score[]=["", "", ""]&lineEmpty[]=1&lineEmpty[]=2&lineEmpty[]=3
+Completed 302 Found in 1ms (Allocations: 450)
+
+
+Started GET "/main/test/?amount=3&subject[]=[%22%22,%20%22%22,%20%22%22]&score[]=[%22%22,%20%22%22,%20%22%22]&lineEmpty[]=1&lineEmpty[]=2&lineEmpty[]=3" for 127.0.0.1 at 2022-09-11 15:55:55 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"3", "subject"=>["[\"\", \"\", \"\"]"], "score"=>["[\"\", \"\", \"\"]"], "lineEmpty"=>["1", "2", "3"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 5.8ms | Allocations: 4324)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 6515)
+Completed 200 OK in 19ms (Views: 19.0ms | Allocations: 6801)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 15:56:04 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", "wefwefe", ""], "score"=>["", "", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=3&subject[]=["", "wefwefe", ""]&score[]=["", "", ""]&lineEmpty[]=1&lineEmpty[]=2&lineEmpty[]=3
+Completed 302 Found in 1ms (Allocations: 446)
+
+
+Started GET "/main/test/?amount=3&subject[]=[%22%22,%20%22wefwefe%22,%20%22%22]&score[]=[%22%22,%20%22%22,%20%22%22]&lineEmpty[]=1&lineEmpty[]=2&lineEmpty[]=3" for 127.0.0.1 at 2022-09-11 15:56:04 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"3", "subject"=>["[\"\", \"wefwefe\", \"\"]"], "score"=>["[\"\", \"\", \"\"]"], "lineEmpty"=>["1", "2", "3"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 5.2ms | Allocations: 4315)
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 6509)
+Completed 200 OK in 30ms (Views: 29.8ms | Allocations: 6797)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-11 15:59:00 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"3", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 6.4ms | Allocations: 4151)
+  Rendered layout layouts/application.html.erb (Duration: 30.0ms | Allocations: 17881)
+Completed 200 OK in 33ms (Views: 31.6ms | Allocations: 18831)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 15:59:03 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["ewfe", "", ""], "score"=>["22", "", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=2&lineEmpty[]=3
+Completed 302 Found in 4ms (Allocations: 468)
+
+
+Started GET "/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=2&lineEmpty[]=3" for 127.0.0.1 at 2022-09-11 15:59:03 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"3", "subject"=>["", ""], "score"=>["", ""], "lineEmpty"=>["2", "3"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 3.3ms | Allocations: 4321)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 6527)
+Completed 200 OK in 8ms (Views: 7.5ms | Allocations: 6828)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 15:59:06 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["ewfe", "", ""], "score"=>["22", "", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=2&lineEmpty[]=3
+Completed 302 Found in 3ms (Allocations: 389)
+
+
+Started GET "/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=2&lineEmpty[]=3" for 127.0.0.1 at 2022-09-11 15:59:06 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"3", "subject"=>["", ""], "score"=>["", ""], "lineEmpty"=>["2", "3"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 3.3ms | Allocations: 4299)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 6490)
+Completed 200 OK in 9ms (Views: 8.9ms | Allocations: 6776)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 15:59:08 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["ewfe", "", ""], "score"=>["22", "", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=2&lineEmpty[]=3
+Completed 302 Found in 2ms (Allocations: 386)
+
+
+Started GET "/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=2&lineEmpty[]=3" for 127.0.0.1 at 2022-09-11 15:59:08 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"3", "subject"=>["", ""], "score"=>["", ""], "lineEmpty"=>["2", "3"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 6.8ms | Allocations: 4314)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 6505)
+Completed 200 OK in 14ms (Views: 13.1ms | Allocations: 6791)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 15:59:45 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["ewfe", "", ""], "score"=>["22", "", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=2&lineEmpty[]=3
+Completed 302 Found in 4ms (Allocations: 356)
+
+
+Started GET "/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=2&lineEmpty[]=3" for 127.0.0.1 at 2022-09-11 15:59:45 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"3", "subject"=>["", ""], "score"=>["", ""], "lineEmpty"=>["2", "3"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 9.7ms | Allocations: 4974)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 7539)
+Completed 200 OK in 32ms (Views: 30.7ms | Allocations: 8455)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 16:01:32 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["ewfe", "", ""], "score"=>["22", "", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=2&lineEmpty[]=3
+Completed 302 Found in 2ms (Allocations: 544)
+
+
+Started GET "/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=2&lineEmpty[]=3" for 127.0.0.1 at 2022-09-11 16:01:33 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"3", "subject"=>["", ""], "score"=>["", ""], "lineEmpty"=>["2", "3"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 6.2ms | Allocations: 4484)
+  Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 18249)
+Completed 200 OK in 31ms (Views: 29.4ms | Allocations: 18866)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 16:01:46 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["ewfe", "", ""], "score"=>["22", "", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=2&lineEmpty[]=3
+Completed 302 Found in 4ms (Allocations: 559)
+
+
+Started GET "/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=2&lineEmpty[]=3" for 127.0.0.1 at 2022-09-11 16:01:46 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"3", "subject"=>["", ""], "score"=>["", ""], "lineEmpty"=>["2", "3"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 5.2ms | Allocations: 4498)
+  Rendered layout layouts/application.html.erb (Duration: 39.5ms | Allocations: 18200)
+Completed 200 OK in 45ms (Views: 43.9ms | Allocations: 18815)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 16:01:57 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["ewfewfewf", "", ""], "score"=>["22", "", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=2&lineEmpty[]=3
+Completed 302 Found in 5ms (Allocations: 405)
+
+
+Started GET "/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=2&lineEmpty[]=3" for 127.0.0.1 at 2022-09-11 16:01:57 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"3", "subject"=>["", ""], "score"=>["", ""], "lineEmpty"=>["2", "3"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 8.0ms | Allocations: 4323)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 6514)
+Completed 200 OK in 21ms (Views: 20.8ms | Allocations: 6816)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 16:03:56 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["ewfewfewf", "", ""], "score"=>["22", "", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=2&lineEmpty[]=3
+Completed 302 Found in 2ms (Allocations: 558)
+
+
+Started GET "/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=2&lineEmpty[]=3" for 127.0.0.1 at 2022-09-11 16:03:56 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"3", "subject"=>["", ""], "score"=>["", ""], "lineEmpty"=>["2", "3"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 11.1ms | Allocations: 4487)
+  Rendered layout layouts/application.html.erb (Duration: 50.6ms | Allocations: 18221)
+Completed 200 OK in 56ms (Views: 54.9ms | Allocations: 18832)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-11 16:04:05 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"3", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 2.6ms | Allocations: 4085)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 6276)
+Completed 200 OK in 22ms (Views: 20.7ms | Allocations: 6779)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 16:04:08 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", "ewfew", ""], "score"=>["", "2", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=1&lineEmpty[]=3
+Completed 302 Found in 2ms (Allocations: 412)
+
+
+Started GET "/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=1&lineEmpty[]=3" for 127.0.0.1 at 2022-09-11 16:04:08 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"3", "subject"=>["", ""], "score"=>["", ""], "lineEmpty"=>["1", "3"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 7.4ms | Allocations: 4306)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 6499)
+Completed 200 OK in 21ms (Views: 20.5ms | Allocations: 6786)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 16:04:32 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", "ewfew", ""], "score"=>["", "2", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=1&lineEmpty[]=3
+Completed 302 Found in 4ms (Allocations: 579)
+
+
+Started GET "/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=1&lineEmpty[]=3" for 127.0.0.1 at 2022-09-11 16:04:32 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"3", "subject"=>["", ""], "score"=>["", ""], "lineEmpty"=>["1", "3"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 4.7ms | Allocations: 4492)
+  Rendered layout layouts/application.html.erb (Duration: 30.4ms | Allocations: 18224)
+Completed 200 OK in 34ms (Views: 32.6ms | Allocations: 18836)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 16:04:49 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", "ewfew", ""], "score"=>["", "2", ""], "commit"=>"Submit"}
+Completed 500 Internal Server Error in 4ms (Allocations: 824)
+
+
+  
+TypeError (no implicit conversion of Class into String):
+  
+app/controllers/main_controller.rb:18:in `+'
+app/controllers/main_controller.rb:18:in `test3'
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 16:04:58 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", "ewfew", ""], "score"=>["", "2", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=1&lineEmpty[]=3
+Completed 302 Found in 2ms (Allocations: 565)
+
+
+Started GET "/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=1&lineEmpty[]=3" for 127.0.0.1 at 2022-09-11 16:04:58 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"3", "subject"=>["", ""], "score"=>["", ""], "lineEmpty"=>["1", "3"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 4.7ms | Allocations: 4486)
+  Rendered layout layouts/application.html.erb (Duration: 34.0ms | Allocations: 18216)
+Completed 200 OK in 36ms (Views: 35.4ms | Allocations: 18827)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 16:05:32 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", "ewfew", ""], "score"=>["", "2", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=1&lineEmpty[]=3
+Completed 302 Found in 2ms (Allocations: 542)
+
+
+Started GET "/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=1&lineEmpty[]=3" for 127.0.0.1 at 2022-09-11 16:05:32 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"3", "subject"=>["", ""], "score"=>["", ""], "lineEmpty"=>["1", "3"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 6.4ms | Allocations: 4483)
+  Rendered layout layouts/application.html.erb (Duration: 27.9ms | Allocations: 18119)
+Completed 200 OK in 30ms (Views: 29.9ms | Allocations: 18730)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 16:06:26 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", "ewfew", ""], "score"=>["", "2", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=1&lineEmpty[]=3
+Completed 302 Found in 2ms (Allocations: 579)
+
+
+Started GET "/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=1&lineEmpty[]=3" for 127.0.0.1 at 2022-09-11 16:06:26 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"3", "subject"=>["", ""], "score"=>["", ""], "lineEmpty"=>["1", "3"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 5.2ms | Allocations: 4499)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 18229)
+Completed 200 OK in 25ms (Views: 24.2ms | Allocations: 18841)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 16:06:52 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", "ewfew", ""], "score"=>["", "2", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=1&lineEmpty[]=3
+Completed 302 Found in 7ms (Allocations: 561)
+
+
+Started GET "/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=1&lineEmpty[]=3" for 127.0.0.1 at 2022-09-11 16:06:52 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"3", "subject"=>["", ""], "score"=>["", ""], "lineEmpty"=>["1", "3"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 3.8ms | Allocations: 4516)
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 18252)
+Completed 200 OK in 33ms (Views: 32.0ms | Allocations: 18863)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 16:07:13 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", "ewfew", ""], "score"=>["", "2", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=1&lineEmpty[]=3
+Completed 302 Found in 2ms (Allocations: 573)
+
+
+Started GET "/main/test/?amount=3&subject[]=&subject[]=&score[]=&score[]=&lineEmpty[]=1&lineEmpty[]=3" for 127.0.0.1 at 2022-09-11 16:07:13 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"3", "subject"=>["", ""], "score"=>["", ""], "lineEmpty"=>["1", "3"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 4.5ms | Allocations: 4502)
+  Rendered layout layouts/application.html.erb (Duration: 27.3ms | Allocations: 18205)
+Completed 200 OK in 34ms (Views: 33.3ms | Allocations: 18816)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 16:07:51 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", "ewfew", ""], "score"=>["", "2", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=3&subject[]=&subject[]=ewfew&subject[]=&score[]=&score[]=2&score[]=&lineEmpty[]=1&lineEmpty[]=3
+Completed 302 Found in 2ms (Allocations: 566)
+
+
+Started GET "/main/test/?amount=3&subject[]=&subject[]=ewfew&subject[]=&score[]=&score[]=2&score[]=&lineEmpty[]=1&lineEmpty[]=3" for 127.0.0.1 at 2022-09-11 16:07:52 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"3", "subject"=>["", "ewfew", ""], "score"=>["", "2", ""], "lineEmpty"=>["1", "3"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 5.4ms | Allocations: 4480)
+  Rendered layout layouts/application.html.erb (Duration: 40.2ms | Allocations: 18215)
+Completed 200 OK in 43ms (Views: 41.9ms | Allocations: 18829)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-11 16:08:09 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"3", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 7.8ms | Allocations: 4665)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 7240)
+Completed 200 OK in 32ms (Views: 29.4ms | Allocations: 8364)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 16:08:11 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", "wef", ""], "score"=>["", "11", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=3&subject[]=&subject[]=wef&subject[]=&score[]=&score[]=11&score[]=&lineEmpty[]=1&lineEmpty[]=3
+Completed 302 Found in 1ms (Allocations: 440)
+
+
+Started GET "/main/test/?amount=3&subject[]=&subject[]=wef&subject[]=&score[]=&score[]=11&score[]=&lineEmpty[]=1&lineEmpty[]=3" for 127.0.0.1 at 2022-09-11 16:08:11 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"3", "subject"=>["", "wef", ""], "score"=>["", "11", ""], "lineEmpty"=>["1", "3"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 3.2ms | Allocations: 4307)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 6501)
+Completed 200 OK in 20ms (Views: 17.7ms | Allocations: 6803)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 16:08:20 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["q", "wef", ""], "score"=>["1", "11", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=3&subject[]=q&subject[]=wef&subject[]=&score[]=1&score[]=11&score[]=&lineEmpty[]=3
+Completed 302 Found in 4ms (Allocations: 368)
+
+
+Started GET "/main/test/?amount=3&subject[]=q&subject[]=wef&subject[]=&score[]=1&score[]=11&score[]=&lineEmpty[]=3" for 127.0.0.1 at 2022-09-11 16:08:20 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"3", "subject"=>["q", "wef", ""], "score"=>["1", "11", ""], "lineEmpty"=>["3"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 5.3ms | Allocations: 4301)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 6492)
+Completed 200 OK in 19ms (Views: 18.8ms | Allocations: 6780)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 16:08:29 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["q", "wef", "d"], "score"=>["1", "11", "2"], "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test3.html.erb within layouts/application
+  Rendered main/test3.html.erb within layouts/application (Duration: 0.5ms | Allocations: 158)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 2350)
+Completed 200 OK in 17ms (Views: 14.8ms | Allocations: 2914)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-11 21:49:09 +0700
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MainController#test2 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test2.html.erb within layouts/application
+  Rendered main/test2.html.erb within layouts/application (Duration: 31.6ms | Allocations: 2813)
+  Rendered layout layouts/application.html.erb (Duration: 429.2ms | Allocations: 36743)
+Completed 200 OK in 456ms (Views: 440.2ms | ActiveRecord: 0.0ms | Allocations: 40139)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-11 21:49:15 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"4", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 15.6ms | Allocations: 5881)
+  Rendered layout layouts/application.html.erb (Duration: 31.1ms | Allocations: 8199)
+Completed 200 OK in 41ms (Views: 33.7ms | ActiveRecord: 0.0ms | Allocations: 9030)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 21:49:18 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["", "", "", ""], "score"=>["", "", "", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=4&subject[]=&subject[]=&subject[]=&subject[]=&score[]=&score[]=&score[]=&score[]=&lineEmpty[]=1&lineEmpty[]=2&lineEmpty[]=3&lineEmpty[]=4
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 519)
+
+
+Started GET "/main/test/?amount=4&subject[]=&subject[]=&subject[]=&subject[]=&score[]=&score[]=&score[]=&score[]=&lineEmpty[]=1&lineEmpty[]=2&lineEmpty[]=3&lineEmpty[]=4" for 127.0.0.1 at 2022-09-11 21:49:19 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"4", "subject"=>["", "", "", ""], "score"=>["", "", "", ""], "lineEmpty"=>["1", "2", "3", "4"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 4.0ms | Allocations: 5302)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 7523)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 7849)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 21:49:26 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["few", "", "", ""], "score"=>["0", "", "", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=4&subject[]=few&subject[]=&subject[]=&subject[]=&score[]=0&score[]=&score[]=&score[]=&lineEmpty[]=2&lineEmpty[]=3&lineEmpty[]=4
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 402)
+
+
+Started GET "/main/test/?amount=4&subject[]=few&subject[]=&subject[]=&subject[]=&score[]=0&score[]=&score[]=&score[]=&lineEmpty[]=2&lineEmpty[]=3&lineEmpty[]=4" for 127.0.0.1 at 2022-09-11 21:49:26 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"4", "subject"=>["few", "", "", ""], "score"=>["0", "", "", ""], "lineEmpty"=>["2", "3", "4"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 5.6ms | Allocations: 5268)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 7460)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 7756)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-11 21:49:30 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["few", "wfe", "", ""], "score"=>["0", "22", "", ""], "commit"=>"Submit"}
+Redirected to http://127.0.0.1:3000/main/test/?amount=4&subject[]=few&subject[]=wfe&subject[]=&subject[]=&score[]=0&score[]=22&score[]=&score[]=&lineEmpty[]=3&lineEmpty[]=4
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 385)
+
+
+Started GET "/main/test/?amount=4&subject[]=few&subject[]=wfe&subject[]=&subject[]=&score[]=0&score[]=22&score[]=&score[]=&lineEmpty[]=3&lineEmpty[]=4" for 127.0.0.1 at 2022-09-11 21:49:30 +0700
+Processing by MainController#test as HTML
+  Parameters: {"amount"=>"4", "subject"=>["few", "wfe", "", ""], "score"=>["0", "22", "", ""], "lineEmpty"=>["3", "4"]}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 2.8ms | Allocations: 5263)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 7454)
+Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.0ms | Allocations: 7748)
+
+
