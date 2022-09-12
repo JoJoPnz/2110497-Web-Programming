@@ -4,10 +4,10 @@
     <%= form.label :query, "Subject Score : #{@score}" %>
     <br>
     <%= form.label :query, "New Name" %>
-    <%= form.text_field :subject, name: "name" %>
+    <%= form.text_field :subject, name: "name", required: true %>
     <br>
     <%= form.label :query, "New Score" %>
-    <%= form.number_field :score, in: 0..100, name: "score" %>
+    <%= form.number_field :score, in: 0..100, name: "score", required: true %>
     <br>
     <%= form.submit "Save" %>
 <% end %>

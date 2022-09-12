@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   post 'main/test3', to: 'main#test3'
   get 'score/list', to: 'main#showList'
   get 'score/edit', to: 'main#editSubject'
+  get 'score/delete', to: 'main#deleteSubject'
   post 'score/save', to: 'main#saveSubject'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   
