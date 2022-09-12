@@ -61,6 +61,16 @@ class MainController < ApplicationController
 
   def showList
     @allSubjects = Subject.all
+    @maxSubject = ""
+    @maxScore = 0
+    @sumScore = 0
+    for s in @allSubjects
+      @sumScore += s.score
+      if(s.score >= @maxScore)
+        @maxScore = s.score
+        @maxSubject = s.name
+      end
+    end
   end
 
   def deleteSubject

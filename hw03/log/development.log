@@ -8066,3 +8066,353 @@ Processing by MainController#showList as HTML
 Completed 200 OK in 15ms (Views: 10.7ms | ActiveRecord: 0.1ms | Allocations: 3745)
 
 
+Started GET "/" for 127.0.0.1 at 2022-09-12 17:09:30 +0700
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#test2 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test2.html.erb within layouts/application
+  Rendered main/test2.html.erb within layouts/application (Duration: 52.5ms | Allocations: 2811)
+  Rendered layout layouts/application.html.erb (Duration: 721.3ms | Allocations: 36917)
+Completed 200 OK in 788ms (Views: 744.8ms | ActiveRecord: 0.0ms | Allocations: 40313)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-12 17:09:41 +0700
+Processing by MainController#showList as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/showList.html.erb within layouts/application
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/views/main/showList.html.erb:12
+  Rendered main/showList.html.erb within layouts/application (Duration: 79.8ms | Allocations: 4790)
+  Rendered layout layouts/application.html.erb (Duration: 103.3ms | Allocations: 7356)
+Completed 200 OK in 124ms (Views: 112.4ms | ActiveRecord: 1.4ms | Allocations: 8538)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-12 17:13:05 +0700
+Processing by MainController#showList as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/main_controller.rb:67:in `showList'
+  [1m[36mSubject Load (0.3ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/main_controller.rb:67:in `showList'
+  Rendering layout layouts/application.html.erb
+  Rendering main/showList.html.erb within layouts/application
+  Rendered main/showList.html.erb within layouts/application (Duration: 0.9ms | Allocations: 456)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 14535)
+Completed 200 OK in 42ms (Views: 26.6ms | ActiveRecord: 3.5ms | Allocations: 18928)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-12 17:13:41 +0700
+Processing by MainController#showList as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/main_controller.rb:67:in `showList'
+  [1m[36mSubject Load (0.5ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/main_controller.rb:67:in `showList'
+  Rendering layout layouts/application.html.erb
+  Rendering main/showList.html.erb within layouts/application
+  Rendered main/showList.html.erb within layouts/application (Duration: 3.7ms | Allocations: 486)
+  Rendered layout layouts/application.html.erb (Duration: 49.5ms | Allocations: 14554)
+Completed 200 OK in 83ms (Views: 53.7ms | ActiveRecord: 1.3ms | Allocations: 18909)
+
+
+Started GET "/score/edit?id=8" for 127.0.0.1 at 2022-09-12 17:13:45 +0700
+Processing by MainController#editSubject as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSubject Load (0.7ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:85:in `editSubject'
+  Rendering layout layouts/application.html.erb
+  Rendering main/editSubject.html.erb within layouts/application
+  Rendered main/editSubject.html.erb within layouts/application (Duration: 13.6ms | Allocations: 3965)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 6276)
+Completed 200 OK in 42ms (Views: 17.6ms | ActiveRecord: 0.7ms | Allocations: 9052)
+
+
+Started POST "/score/save?id=8" for 127.0.0.1 at 2022-09-12 17:13:51 +0700
+Processing by MainController#saveSubject as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "name"=>"drawing", "score"=>"20", "commit"=>"Save", "id"=>"8"}
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:94:in `saveSubject'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:95:in `saveSubject'
+  [1m[36mSubject Update (0.4ms)[0m  [1m[33mUPDATE "subjects" SET "score" = ?, "updated_at" = ? WHERE "subjects"."id" = ?[0m  [["score", 20], ["updated_at", "2022-09-12 10:13:51.468691"], ["id", 8]]
+  ↳ app/controllers/main_controller.rb:95:in `saveSubject'
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:95:in `saveSubject'
+Redirected to http://127.0.0.1:3000/score/list
+Completed 302 Found in 29ms (ActiveRecord: 5.4ms | Allocations: 4149)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-12 17:13:51 +0700
+Processing by MainController#showList as HTML
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/main_controller.rb:67:in `showList'
+  Rendering layout layouts/application.html.erb
+  Rendering main/showList.html.erb within layouts/application
+  Rendered main/showList.html.erb within layouts/application (Duration: 0.2ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2646)
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 3533)
+
+
+Started GET "/score/edit?id=7" for 127.0.0.1 at 2022-09-12 17:13:56 +0700
+Processing by MainController#editSubject as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:85:in `editSubject'
+  Rendering layout layouts/application.html.erb
+  Rendering main/editSubject.html.erb within layouts/application
+  Rendered main/editSubject.html.erb within layouts/application (Duration: 2.5ms | Allocations: 3277)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 5484)
+Completed 200 OK in 22ms (Views: 17.6ms | ActiveRecord: 0.1ms | Allocations: 6253)
+
+
+Started POST "/score/save?id=7" for 127.0.0.1 at 2022-09-12 17:14:01 +0700
+Processing by MainController#saveSubject as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "name"=>"phy", "score"=>"20", "commit"=>"Save", "id"=>"7"}
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:94:in `saveSubject'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:95:in `saveSubject'
+  [1m[36mSubject Update (0.3ms)[0m  [1m[33mUPDATE "subjects" SET "score" = ?, "updated_at" = ? WHERE "subjects"."id" = ?[0m  [["score", 20], ["updated_at", "2022-09-12 10:14:01.743915"], ["id", 7]]
+  ↳ app/controllers/main_controller.rb:95:in `saveSubject'
+  [1m[36mTRANSACTION (12.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:95:in `saveSubject'
+Redirected to http://127.0.0.1:3000/score/list
+Completed 302 Found in 26ms (ActiveRecord: 12.4ms | Allocations: 2643)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-12 17:14:01 +0700
+Processing by MainController#showList as HTML
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/main_controller.rb:67:in `showList'
+  Rendering layout layouts/application.html.erb
+  Rendering main/showList.html.erb within layouts/application
+  Rendered main/showList.html.erb within layouts/application (Duration: 0.3ms | Allocations: 158)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 2504)
+Completed 200 OK in 17ms (Views: 13.9ms | ActiveRecord: 0.1ms | Allocations: 3331)
+
+
+Started GET "/score/edit?id=8" for 127.0.0.1 at 2022-09-12 17:14:05 +0700
+Processing by MainController#editSubject as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:85:in `editSubject'
+  Rendering layout layouts/application.html.erb
+  Rendering main/editSubject.html.erb within layouts/application
+  Rendered main/editSubject.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3236)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 5432)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.2ms | Allocations: 6197)
+
+
+Started POST "/score/save?id=8" for 127.0.0.1 at 2022-09-12 17:14:11 +0700
+Processing by MainController#saveSubject as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "name"=>"drawing", "score"=>"18", "commit"=>"Save", "id"=>"8"}
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:94:in `saveSubject'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:95:in `saveSubject'
+  [1m[36mSubject Update (0.7ms)[0m  [1m[33mUPDATE "subjects" SET "score" = ?, "updated_at" = ? WHERE "subjects"."id" = ?[0m  [["score", 18], ["updated_at", "2022-09-12 10:14:11.327862"], ["id", 8]]
+  ↳ app/controllers/main_controller.rb:95:in `saveSubject'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:95:in `saveSubject'
+Redirected to http://127.0.0.1:3000/score/list
+Completed 302 Found in 25ms (ActiveRecord: 4.4ms | Allocations: 2648)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-12 17:14:11 +0700
+Processing by MainController#showList as HTML
+  [1m[36mSubject Load (0.2ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/main_controller.rb:67:in `showList'
+  Rendering layout layouts/application.html.erb
+  Rendering main/showList.html.erb within layouts/application
+  Rendered main/showList.html.erb within layouts/application (Duration: 0.2ms | Allocations: 159)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2521)
+Completed 200 OK in 18ms (Views: 8.9ms | ActiveRecord: 0.2ms | Allocations: 3343)
+
+
+Started GET "/score/delete?id=5" for 127.0.0.1 at 2022-09-12 17:14:20 +0700
+Processing by MainController#deleteSubject as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:78:in `deleteSubject'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:79:in `deleteSubject'
+  [1m[36mSubject Destroy (1.8ms)[0m  [1m[31mDELETE FROM "subjects" WHERE "subjects"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/main_controller.rb:79:in `deleteSubject'
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:79:in `deleteSubject'
+Redirected to http://127.0.0.1:3000/score/list
+Completed 302 Found in 28ms (ActiveRecord: 7.9ms | Allocations: 2178)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-12 17:14:20 +0700
+Processing by MainController#showList as HTML
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/main_controller.rb:67:in `showList'
+  Rendering layout layouts/application.html.erb
+  Rendering main/showList.html.erb within layouts/application
+  Rendered main/showList.html.erb within layouts/application (Duration: 2.2ms | Allocations: 440)
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 3241)
+Completed 200 OK in 41ms (Views: 32.7ms | ActiveRecord: 0.1ms | Allocations: 4646)
+
+
+Started GET "/score/delete?id=7" for 127.0.0.1 at 2022-09-12 17:14:23 +0700
+Processing by MainController#deleteSubject as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:78:in `deleteSubject'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:79:in `deleteSubject'
+  [1m[36mSubject Destroy (0.4ms)[0m  [1m[31mDELETE FROM "subjects" WHERE "subjects"."id" = ?[0m  [["id", 7]]
+  ↳ app/controllers/main_controller.rb:79:in `deleteSubject'
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:79:in `deleteSubject'
+Redirected to http://127.0.0.1:3000/score/list
+Completed 302 Found in 19ms (ActiveRecord: 4.5ms | Allocations: 2222)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-12 17:14:23 +0700
+Processing by MainController#showList as HTML
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/main_controller.rb:67:in `showList'
+  Rendering layout layouts/application.html.erb
+  Rendering main/showList.html.erb within layouts/application
+  Rendered main/showList.html.erb within layouts/application (Duration: 0.3ms | Allocations: 68)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2443)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.1ms | Allocations: 3283)
+
+
+Started GET "/score/delete?id=8" for 127.0.0.1 at 2022-09-12 17:14:24 +0700
+Processing by MainController#deleteSubject as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSubject Load (3.4ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:78:in `deleteSubject'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:79:in `deleteSubject'
+  [1m[36mSubject Destroy (0.6ms)[0m  [1m[31mDELETE FROM "subjects" WHERE "subjects"."id" = ?[0m  [["id", 8]]
+  ↳ app/controllers/main_controller.rb:79:in `deleteSubject'
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:79:in `deleteSubject'
+Redirected to http://127.0.0.1:3000/score/list
+Completed 302 Found in 24ms (ActiveRecord: 7.8ms | Allocations: 2109)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-12 17:14:24 +0700
+Processing by MainController#showList as HTML
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/main_controller.rb:67:in `showList'
+  Rendering layout layouts/application.html.erb
+  Rendering main/showList.html.erb within layouts/application
+  Rendered main/showList.html.erb within layouts/application (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 2366)
+Completed 200 OK in 16ms (Views: 12.3ms | ActiveRecord: 0.1ms | Allocations: 3142)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-12 17:14:31 +0700
+Processing by MainController#test2 as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/test2.html.erb within layouts/application
+  Rendered main/test2.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1941)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 4140)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 4459)
+
+
+Started POST "/main/test" for 127.0.0.1 at 2022-09-12 17:14:34 +0700
+Processing by MainController#test as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "amount"=>"3", "commit"=>"Submit"}
+  Rendering layout layouts/application.html.erb
+  Rendering main/test.html.erb within layouts/application
+  Rendered main/test.html.erb within layouts/application (Duration: 12.6ms | Allocations: 4534)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 6725)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms | Allocations: 7315)
+
+
+Started POST "/main/test3" for 127.0.0.1 at 2022-09-12 17:14:45 +0700
+Processing by MainController#test3 as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "subject"=>["cal", "phy", "drawing"], "score"=>["1", "2", "0"], "commit"=>"Submit"}
+  [1m[36mSubject Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "subjects" WHERE "subjects"."name" = ? LIMIT ?[0m  [["name", "cal"], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:52:in `block in test3'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:53:in `block in test3'
+  [1m[36mSubject Create (3.4ms)[0m  [1m[32mINSERT INTO "subjects" ("name", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "cal"], ["score", 1], ["created_at", "2022-09-12 10:14:45.103395"], ["updated_at", "2022-09-12 10:14:45.103395"]]
+  ↳ app/controllers/main_controller.rb:53:in `block in test3'
+  [1m[36mTRANSACTION (17.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:53:in `block in test3'
+  [1m[36mSubject Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "subjects" WHERE "subjects"."name" = ? LIMIT ?[0m  [["name", "phy"], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:52:in `block in test3'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:53:in `block in test3'
+  [1m[36mSubject Create (3.1ms)[0m  [1m[32mINSERT INTO "subjects" ("name", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "phy"], ["score", 2], ["created_at", "2022-09-12 10:14:45.131154"], ["updated_at", "2022-09-12 10:14:45.131154"]]
+  ↳ app/controllers/main_controller.rb:53:in `block in test3'
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:53:in `block in test3'
+  [1m[36mSubject Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "subjects" WHERE "subjects"."name" = ? LIMIT ?[0m  [["name", "drawing"], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:52:in `block in test3'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/main_controller.rb:53:in `block in test3'
+  [1m[36mSubject Create (2.6ms)[0m  [1m[32mINSERT INTO "subjects" ("name", "score", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "drawing"], ["score", 0], ["created_at", "2022-09-12 10:14:45.145560"], ["updated_at", "2022-09-12 10:14:45.145560"]]
+  ↳ app/controllers/main_controller.rb:53:in `block in test3'
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/main_controller.rb:53:in `block in test3'
+  Rendering layout layouts/application.html.erb
+  Rendering main/test3.html.erb within layouts/application
+  Rendered main/test3.html.erb within layouts/application (Duration: 1.1ms | Allocations: 158)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 2350)
+Completed 200 OK in 75ms (Views: 10.5ms | ActiveRecord: 37.4ms | Allocations: 10214)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-12 17:14:51 +0700
+Processing by MainController#showList as HTML
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/main_controller.rb:67:in `showList'
+  Rendering layout layouts/application.html.erb
+  Rendering main/showList.html.erb within layouts/application
+  Rendered main/showList.html.erb within layouts/application (Duration: 0.2ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2532)
+Completed 200 OK in 11ms (Views: 7.4ms | ActiveRecord: 0.1ms | Allocations: 3353)
+
+
+Started GET "/score/edit?id=9" for 127.0.0.1 at 2022-09-12 17:15:00 +0700
+Processing by MainController#editSubject as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:85:in `editSubject'
+  Rendering layout layouts/application.html.erb
+  Rendering main/editSubject.html.erb within layouts/application
+  Rendered main/editSubject.html.erb within layouts/application (Duration: 7.3ms | Allocations: 3725)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 6290)
+Completed 200 OK in 33ms (Views: 27.6ms | ActiveRecord: 0.1ms | Allocations: 7626)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-12 17:15:02 +0700
+Processing by MainController#showList as HTML
+  [1m[36mSubject Load (3.0ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/main_controller.rb:67:in `showList'
+  Rendering layout layouts/application.html.erb
+  Rendering main/showList.html.erb within layouts/application
+  Rendered main/showList.html.erb within layouts/application (Duration: 0.7ms | Allocations: 417)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 2769)
+Completed 200 OK in 21ms (Views: 12.7ms | ActiveRecord: 3.0ms | Allocations: 3726)
+
+
+Started GET "/score/edit?id=9" for 127.0.0.1 at 2022-09-12 17:15:04 +0700
+Processing by MainController#editSubject as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/main_controller.rb:85:in `editSubject'
+  Rendering layout layouts/application.html.erb
+  Rendering main/editSubject.html.erb within layouts/application
+  Rendered main/editSubject.html.erb within layouts/application (Duration: 2.9ms | Allocations: 3245)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 5436)
+Completed 200 OK in 24ms (Views: 17.4ms | ActiveRecord: 0.1ms | Allocations: 6225)
+
+
+Started GET "/score/list" for 127.0.0.1 at 2022-09-12 17:15:07 +0700
+Processing by MainController#showList as HTML
+  [1m[36mSubject Load (0.1ms)[0m  [1m[34mSELECT "subjects".* FROM "subjects"[0m
+  ↳ app/controllers/main_controller.rb:67:in `showList'
+  Rendering layout layouts/application.html.erb
+  Rendering main/showList.html.erb within layouts/application
+  Rendered main/showList.html.erb within layouts/application (Duration: 0.3ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 2523)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.1ms | Allocations: 3347)
+
+
