@@ -768,3 +768,57 @@ Processing by ScoresController#edit as HTML
 Completed 200 OK in 39ms (Views: 33.2ms | ActiveRecord: 0.1ms | Allocations: 4565)
 
 
+Started GET "/scores/1/edit" for 127.0.0.1 at 2022-09-22 15:06:28 +0700
+Processing by ScoresController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScore Load (0.2ms)[0m  [1m[34mSELECT "scores".* FROM "scores" WHERE "scores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/scores_controller.rb:63:in `set_score'
+  Rendering layout layouts/application.html.erb
+  Rendering scores/edit.html.erb within layouts/application
+  Rendered scores/_form.html.erb (Duration: 5.4ms | Allocations: 1539)
+  Rendered scores/edit.html.erb within layouts/application (Duration: 13.6ms | Allocations: 1662)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 3836)
+Completed 200 OK in 40ms (Views: 31.4ms | ActiveRecord: 0.2ms | Allocations: 4565)
+
+
+Started GET "/students/1/edit_score" for 127.0.0.1 at 2022-09-22 15:06:35 +0700
+Processing by StudentsController#edit_score as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (2.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:63:in `edit_score'
+  [1m[36mScore Load (0.3ms)[0m  [1m[34mSELECT "scores".* FROM "scores" WHERE "scores"."student_id" = ?[0m  [["student_id", 1]]
+  ↳ app/controllers/students_controller.rb:69:in `edit_score'
+  Rendering layout layouts/application.html.erb
+  Rendering students/edit_score.html.erb within layouts/application
+  Rendered students/edit_score.html.erb within layouts/application (Duration: 1.2ms | Allocations: 424)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 2598)
+Completed 200 OK in 33ms (Views: 16.9ms | ActiveRecord: 2.7ms | Allocations: 3961)
+
+
+Started GET "/students/1/edit_score" for 127.0.0.1 at 2022-09-22 15:06:51 +0700
+Processing by StudentsController#edit_score as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 4ms (Allocations: 1725)
+
+
+  
+NoMethodError (undefined method `scores' for nil:NilClass
+
+    for @s in @student.scores
+                      ^^^^^^^):
+  
+app/controllers/students_controller.rb:67:in `edit_score'
+Started GET "/students/1/edit_score" for 127.0.0.1 at 2022-09-22 15:07:03 +0700
+Processing by StudentsController#edit_score as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:83:in `set_student'
+  [1m[36mScore Load (0.2ms)[0m  [1m[34mSELECT "scores".* FROM "scores" WHERE "scores"."student_id" = ?[0m  [["student_id", 1]]
+  ↳ app/controllers/students_controller.rb:67:in `edit_score'
+  Rendering layout layouts/application.html.erb
+  Rendering students/edit_score.html.erb within layouts/application
+  Rendered students/edit_score.html.erb within layouts/application (Duration: 1.7ms | Allocations: 619)
+  Rendered layout layouts/application.html.erb (Duration: 50.8ms | Allocations: 14341)
+Completed 200 OK in 118ms (Views: 54.6ms | ActiveRecord: 4.3ms | Allocations: 24605)
+
+

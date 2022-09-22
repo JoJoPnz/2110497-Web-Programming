@@ -1,5 +1,5 @@
 class StudentsController < ApplicationController
-  before_action :set_student, only: %i[ show edit update destroy ]
+  before_action :set_student, only: %i[ show edit update destroy edit_score ]
 
   # GET /students or /students.json
   def index
@@ -59,8 +59,6 @@ class StudentsController < ApplicationController
 
   # GET edit_score
   def edit_score
-    @id = params[:id].to_i
-    @student = Student.find_by(id: @id)
     @sumScore = 0
     @count = 0
     @maxScore = 0
