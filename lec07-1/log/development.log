@@ -5,3 +5,436 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 33ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 5092)
 
 
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateStudents (20220922073256)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "students" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "dob" date, "student_no" varchar, "class_year" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220922073256"]]
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateScores (20220922073334)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "scores" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "subject" varchar, "point" integer, "grade" varchar, "student_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_e7ff095b47"
+FOREIGN KEY ("student_id")
+  REFERENCES "students" ("id")
+)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_scores_on_student_id" ON "scores" ("student_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220922073334"]]
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-09-22 07:33:46.478615"], ["updated_at", "2022-09-22 07:33:46.478615"]]
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-09-22 14:33:49 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.1ms | Allocations: 300)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 1031)
+
+
+Started GET "/students/" for 127.0.0.1 at 2022-09-22 14:33:53 +0700
+Processing by StudentsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:6
+  Rendered students/index.html.erb within layouts/application (Duration: 48.3ms | Allocations: 5039)
+  Rendered layout layouts/application.html.erb (Duration: 1298.0ms | Allocations: 90169)
+Completed 200 OK in 1318ms (Views: 1307.9ms | ActiveRecord: 0.4ms | Allocations: 91963)
+
+
+Started GET "/students/new" for 127.0.0.1 at 2022-09-22 14:33:55 +0700
+Processing by StudentsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering students/new.html.erb within layouts/application
+  Rendered students/_form.html.erb (Duration: 38.5ms | Allocations: 5950)
+  Rendered students/new.html.erb within layouts/application (Duration: 40.5ms | Allocations: 6306)
+  Rendered layout layouts/application.html.erb (Duration: 47.5ms | Allocations: 8604)
+Completed 200 OK in 67ms (Views: 49.0ms | ActiveRecord: 0.7ms | Allocations: 14363)
+
+
+Started POST "/students" for 127.0.0.1 at 2022-09-22 14:34:03 +0700
+Processing by StudentsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "student"=>{"name"=>"JoJo", "dob"=>"2022-09-07", "student_no"=>"21078", "class_year"=>"1"}, "commit"=>"Create Student"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:27:in `block in create'
+  [1m[36mStudent Create (1.0ms)[0m  [1m[32mINSERT INTO "students" ("name", "dob", "student_no", "class_year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "JoJo"], ["dob", "2022-09-07"], ["student_no", "21078"], ["class_year", 1], ["created_at", "2022-09-22 07:34:03.471355"], ["updated_at", "2022-09-22 07:34:03.471355"]]
+  ↳ app/controllers/students_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/students/1
+Completed 302 Found in 21ms (ActiveRecord: 4.8ms | Allocations: 3885)
+
+
+Started GET "/students/1" for 127.0.0.1 at 2022-09-22 14:34:03 +0700
+Processing by StudentsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:63:in `set_student'
+  Rendering layout layouts/application.html.erb
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/_student.html.erb (Duration: 2.1ms | Allocations: 286)
+  Rendered students/show.html.erb within layouts/application (Duration: 9.1ms | Allocations: 1633)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 3914)
+Completed 200 OK in 26ms (Views: 15.7ms | ActiveRecord: 0.4ms | Allocations: 6725)
+
+
+Started GET "/scores" for 127.0.0.1 at 2022-09-22 14:34:07 +0700
+Processing by ScoresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering scores/index.html.erb within layouts/application
+  [1m[36mScore Load (0.5ms)[0m  [1m[34mSELECT "scores".* FROM "scores"[0m
+  ↳ app/views/scores/index.html.erb:6
+  Rendered scores/index.html.erb within layouts/application (Duration: 24.9ms | Allocations: 1280)
+  Rendered layout layouts/application.html.erb (Duration: 40.7ms | Allocations: 3675)
+Completed 200 OK in 69ms (Views: 47.0ms | ActiveRecord: 0.5ms | Allocations: 5966)
+
+
+Started GET "/scores/new" for 127.0.0.1 at 2022-09-22 14:34:08 +0700
+Processing by ScoresController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering scores/new.html.erb within layouts/application
+  Rendered scores/_form.html.erb (Duration: 11.9ms | Allocations: 2123)
+  Rendered scores/new.html.erb within layouts/application (Duration: 20.4ms | Allocations: 2407)
+  Rendered layout layouts/application.html.erb (Duration: 29.6ms | Allocations: 4589)
+Completed 200 OK in 72ms (Views: 34.7ms | ActiveRecord: 1.4ms | Allocations: 8538)
+
+
+Started POST "/scores" for 127.0.0.1 at 2022-09-22 14:34:12 +0700
+Processing by ScoresController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "score"=>{"subject"=>"cal", "point"=>"80", "grade"=>"A", "student_id"=>"1"}, "commit"=>"Create Score"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/scores_controller.rb:27:in `block in create'
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/scores_controller.rb:27:in `block in create'
+  [1m[36mScore Create (0.4ms)[0m  [1m[32mINSERT INTO "scores" ("subject", "point", "grade", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["subject", "cal"], ["point", 80], ["grade", "A"], ["student_id", 1], ["created_at", "2022-09-22 07:34:12.827271"], ["updated_at", "2022-09-22 07:34:12.827271"]]
+  ↳ app/controllers/scores_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/scores_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/scores/1
+Completed 302 Found in 42ms (ActiveRecord: 5.4ms | Allocations: 7429)
+
+
+Started GET "/scores/1" for 127.0.0.1 at 2022-09-22 14:34:12 +0700
+Processing by ScoresController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mScore Load (0.4ms)[0m  [1m[34mSELECT "scores".* FROM "scores" WHERE "scores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/scores_controller.rb:63:in `set_score'
+  Rendering layout layouts/application.html.erb
+  Rendering scores/show.html.erb within layouts/application
+  Rendered scores/_score.html.erb (Duration: 0.9ms | Allocations: 223)
+  Rendered scores/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1230)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 3503)
+Completed 200 OK in 16ms (Views: 9.8ms | ActiveRecord: 0.4ms | Allocations: 5012)
+
+
+Started GET "/scores" for 127.0.0.1 at 2022-09-22 14:34:14 +0700
+Processing by ScoresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering scores/index.html.erb within layouts/application
+  [1m[36mScore Load (0.3ms)[0m  [1m[34mSELECT "scores".* FROM "scores"[0m
+  ↳ app/views/scores/index.html.erb:6
+  Rendered scores/_score.html.erb (Duration: 0.7ms | Allocations: 23)
+  Rendered scores/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 906)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 3088)
+Completed 200 OK in 34ms (Views: 30.7ms | ActiveRecord: 0.3ms | Allocations: 3359)
+
+
+Started GET "/scores/1" for 127.0.0.1 at 2022-09-22 14:34:16 +0700
+Processing by ScoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScore Load (0.1ms)[0m  [1m[34mSELECT "scores".* FROM "scores" WHERE "scores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/scores_controller.rb:63:in `set_score'
+  Rendering layout layouts/application.html.erb
+  Rendering scores/show.html.erb within layouts/application
+  Rendered scores/_score.html.erb (Duration: 0.2ms | Allocations: 23)
+  Rendered scores/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 585)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2759)
+Completed 200 OK in 20ms (Views: 15.8ms | ActiveRecord: 0.1ms | Allocations: 3490)
+
+
+Started GET "/scores" for 127.0.0.1 at 2022-09-22 14:34:18 +0700
+Processing by ScoresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering scores/index.html.erb within layouts/application
+  [1m[36mScore Load (0.3ms)[0m  [1m[34mSELECT "scores".* FROM "scores"[0m
+  ↳ app/views/scores/index.html.erb:6
+  Rendered scores/_score.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered scores/index.html.erb within layouts/application (Duration: 11.4ms | Allocations: 893)
+  Rendered layout layouts/application.html.erb (Duration: 27.5ms | Allocations: 3075)
+Completed 200 OK in 34ms (Views: 32.6ms | ActiveRecord: 0.3ms | Allocations: 3345)
+
+
+Started GET "/scores/new" for 127.0.0.1 at 2022-09-22 14:34:18 +0700
+Processing by ScoresController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering scores/new.html.erb within layouts/application
+  Rendered scores/_form.html.erb (Duration: 3.5ms | Allocations: 1508)
+  Rendered scores/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1596)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3792)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 4072)
+
+
+Started POST "/scores" for 127.0.0.1 at 2022-09-22 14:34:24 +0700
+Processing by ScoresController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "score"=>{"subject"=>"phy", "point"=>"75", "grade"=>"B+", "student_id"=>"1"}, "commit"=>"Create Score"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/scores_controller.rb:27:in `block in create'
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/scores_controller.rb:27:in `block in create'
+  [1m[36mScore Create (1.2ms)[0m  [1m[32mINSERT INTO "scores" ("subject", "point", "grade", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["subject", "phy"], ["point", 75], ["grade", "B+"], ["student_id", 1], ["created_at", "2022-09-22 07:34:24.782517"], ["updated_at", "2022-09-22 07:34:24.782517"]]
+  ↳ app/controllers/scores_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/scores_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/scores/2
+Completed 302 Found in 22ms (ActiveRecord: 4.3ms | Allocations: 3235)
+
+
+Started GET "/scores/2" for 127.0.0.1 at 2022-09-22 14:34:24 +0700
+Processing by ScoresController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mScore Load (0.1ms)[0m  [1m[34mSELECT "scores".* FROM "scores" WHERE "scores"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/scores_controller.rb:63:in `set_score'
+  Rendering layout layouts/application.html.erb
+  Rendering scores/show.html.erb within layouts/application
+  Rendered scores/_score.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered scores/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 601)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 2775)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.1ms | Allocations: 3509)
+
+
+Started GET "/scores" for 127.0.0.1 at 2022-09-22 14:34:26 +0700
+Processing by ScoresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering scores/index.html.erb within layouts/application
+  [1m[36mScore Load (0.3ms)[0m  [1m[34mSELECT "scores".* FROM "scores"[0m
+  ↳ app/views/scores/index.html.erb:6
+  Rendered scores/_score.html.erb (Duration: 0.3ms | Allocations: 23)
+  Rendered scores/_score.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered scores/index.html.erb within layouts/application (Duration: 16.0ms | Allocations: 1020)
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | Allocations: 3202)
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.3ms | Allocations: 3473)
+
+
+Started GET "/students/1/" for 127.0.0.1 at 2022-09-22 14:41:01 +0700
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:86:in `set_student'
+  Rendering layout layouts/application.html.erb
+  Rendering students/show.html.erb within layouts/application
+  Rendered students/_student.html.erb (Duration: 0.3ms | Allocations: 61)
+  Rendered students/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 863)
+  Rendered layout layouts/application.html.erb (Duration: 32.2ms | Allocations: 14573)
+Completed 200 OK in 70ms (Views: 34.5ms | ActiveRecord: 0.9ms | Allocations: 19826)
+
+
+Started GET "/students/1/edit_score" for 127.0.0.1 at 2022-09-22 14:42:20 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/students/1/edit_score"):
+  
+Started GET "/students/1/edit_score" for 127.0.0.1 at 2022-09-22 14:44:04 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/students/1/edit_score"):
+  
+Started GET "/students/1/edit_score" for 127.0.0.1 at 2022-09-22 14:44:06 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/students/1/edit_score"):
+  
+Started GET "/students/1/edit_score" for 127.0.0.1 at 2022-09-22 14:44:33 +0700
+Processing by StudentsController#edit_score as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:63:in `edit_score'
+  [1m[36mScore Load (3.1ms)[0m  [1m[34mSELECT "scores".* FROM "scores" WHERE "scores"."student_id" = ?[0m  [["student_id", 1]]
+  ↳ app/controllers/students_controller.rb:69:in `edit_score'
+  Rendering layout layouts/application.html.erb
+  Rendering students/edit_score.html.erb within layouts/application
+  Rendered students/edit_score.html.erb within layouts/application (Duration: 5.9ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 90.0ms | Allocations: 14283)
+Completed 200 OK in 230ms (Views: 101.1ms | ActiveRecord: 10.9ms | Allocations: 26487)
+
+
+Started GET "/students/1/edit_score" for 127.0.0.1 at 2022-09-22 14:44:46 +0700
+Processing by StudentsController#edit_score as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:63:in `edit_score'
+  [1m[36mScore Load (2.1ms)[0m  [1m[34mSELECT "scores".* FROM "scores" WHERE "scores"."student_id" = ?[0m  [["student_id", 1]]
+  ↳ app/controllers/students_controller.rb:69:in `edit_score'
+  Rendering layout layouts/application.html.erb
+  Rendering students/edit_score.html.erb within layouts/application
+  Rendered students/edit_score.html.erb within layouts/application (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 13982)
+Completed 200 OK in 74ms (Views: 35.9ms | ActiveRecord: 4.3ms | Allocations: 24210)
+
+
+Started GET "/students/1/edit_score" for 127.0.0.1 at 2022-09-22 14:44:47 +0700
+Processing by StudentsController#edit_score as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:63:in `edit_score'
+  [1m[36mScore Load (0.1ms)[0m  [1m[34mSELECT "scores".* FROM "scores" WHERE "scores"."student_id" = ?[0m  [["student_id", 1]]
+  ↳ app/controllers/students_controller.rb:69:in `edit_score'
+  Rendering layout layouts/application.html.erb
+  Rendering students/edit_score.html.erb within layouts/application
+  Rendered students/edit_score.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 2334)
+Completed 200 OK in 19ms (Views: 10.8ms | ActiveRecord: 0.2ms | Allocations: 3848)
+
+
+Started GET "/students/1/edit_score" for 127.0.0.1 at 2022-09-22 14:44:56 +0700
+Processing by StudentsController#edit_score as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:63:in `edit_score'
+  [1m[36mScore Load (0.1ms)[0m  [1m[34mSELECT "scores".* FROM "scores" WHERE "scores"."student_id" = ?[0m  [["student_id", 1]]
+  ↳ app/controllers/students_controller.rb:69:in `edit_score'
+  Rendering layout layouts/application.html.erb
+  Rendering students/edit_score.html.erb within layouts/application
+  Rendered students/edit_score.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 2334)
+Completed 200 OK in 35ms (Views: 21.4ms | ActiveRecord: 0.3ms | Allocations: 3716)
+
+
+Started GET "/students/1/edit_score" for 127.0.0.1 at 2022-09-22 14:45:00 +0700
+Processing by StudentsController#edit_score as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:63:in `edit_score'
+  [1m[36mScore Load (0.1ms)[0m  [1m[34mSELECT "scores".* FROM "scores" WHERE "scores"."student_id" = ?[0m  [["student_id", 1]]
+  ↳ app/controllers/students_controller.rb:69:in `edit_score'
+  Rendering layout layouts/application.html.erb
+  Rendering students/edit_score.html.erb within layouts/application
+  Rendered students/edit_score.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 2332)
+Completed 200 OK in 28ms (Views: 23.0ms | ActiveRecord: 0.3ms | Allocations: 3712)
+
+
+Started GET "/students/1/edit_score" for 127.0.0.1 at 2022-09-22 14:46:01 +0700
+Processing by StudentsController#edit_score as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:63:in `edit_score'
+  [1m[36mScore Load (0.3ms)[0m  [1m[34mSELECT "scores".* FROM "scores" WHERE "scores"."student_id" = ?[0m  [["student_id", 1]]
+  ↳ app/controllers/students_controller.rb:69:in `edit_score'
+  Rendering layout layouts/application.html.erb
+  Rendering students/edit_score.html.erb within layouts/application
+  Rendered students/edit_score.html.erb within layouts/application (Duration: 0.8ms | Allocations: 155)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 2944)
+Completed 200 OK in 39ms (Views: 20.2ms | ActiveRecord: 0.5ms | Allocations: 4913)
+
+
+Started GET "/students/1/edit_score" for 127.0.0.1 at 2022-09-22 14:47:26 +0700
+Processing by StudentsController#edit_score as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:63:in `edit_score'
+  [1m[36mScore Load (34.7ms)[0m  [1m[34mSELECT "scores".* FROM "scores" WHERE "scores"."student_id" = ?[0m  [["student_id", 1]]
+  ↳ app/controllers/students_controller.rb:69:in `edit_score'
+  Rendering layout layouts/application.html.erb
+  Rendering students/edit_score.html.erb within layouts/application
+  Rendered students/edit_score.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 53.4ms | Allocations: 14038)
+Completed 200 OK in 173ms (Views: 62.0ms | ActiveRecord: 36.7ms | Allocations: 24214)
+
+
+Started GET "/students/1/edit_score" for 127.0.0.1 at 2022-09-22 14:48:03 +0700
+Processing by StudentsController#edit_score as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:63:in `edit_score'
+  [1m[36mScore Load (0.1ms)[0m  [1m[34mSELECT "scores".* FROM "scores" WHERE "scores"."student_id" = ?[0m  [["student_id", 1]]
+  ↳ app/controllers/students_controller.rb:69:in `edit_score'
+  Rendering layout layouts/application.html.erb
+  Rendering students/edit_score.html.erb within layouts/application
+  Rendered students/edit_score.html.erb within layouts/application (Duration: 0.7ms | Allocations: 162)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 2963)
+Completed 200 OK in 41ms (Views: 32.2ms | ActiveRecord: 0.3ms | Allocations: 5071)
+
+
+Started GET "/scores/1" for 127.0.0.1 at 2022-09-22 14:51:21 +0700
+Processing by ScoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScore Load (0.9ms)[0m  [1m[34mSELECT "scores".* FROM "scores" WHERE "scores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/scores_controller.rb:63:in `set_score'
+  Rendering layout layouts/application.html.erb
+  Rendering scores/show.html.erb within layouts/application
+  Rendered scores/_score.html.erb (Duration: 2.4ms | Allocations: 236)
+  Rendered scores/show.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1320)
+  Rendered layout layouts/application.html.erb (Duration: 42.4ms | Allocations: 15178)
+Completed 200 OK in 66ms (Views: 45.3ms | ActiveRecord: 2.1ms | Allocations: 20569)
+
+
+Started GET "/scores/1/edit" for 127.0.0.1 at 2022-09-22 14:51:22 +0700
+Processing by ScoresController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mScore Load (0.2ms)[0m  [1m[34mSELECT "scores".* FROM "scores" WHERE "scores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/scores_controller.rb:63:in `set_score'
+  Rendering layout layouts/application.html.erb
+  Rendering scores/edit.html.erb within layouts/application
+  Rendered scores/_form.html.erb (Duration: 17.0ms | Allocations: 2076)
+  Rendered scores/edit.html.erb within layouts/application (Duration: 25.3ms | Allocations: 2408)
+  Rendered layout layouts/application.html.erb (Duration: 42.4ms | Allocations: 4590)
+Completed 200 OK in 51ms (Views: 45.6ms | ActiveRecord: 0.2ms | Allocations: 5449)
+
+
+Started GET "/students/1/edit_score" for 127.0.0.1 at 2022-09-22 14:53:41 +0700
+Processing by StudentsController#edit_score as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:63:in `edit_score'
+  [1m[36mScore Load (0.3ms)[0m  [1m[34mSELECT "scores".* FROM "scores" WHERE "scores"."student_id" = ?[0m  [["student_id", 1]]
+  ↳ app/controllers/students_controller.rb:69:in `edit_score'
+  Rendering layout layouts/application.html.erb
+  Rendering students/edit_score.html.erb within layouts/application
+  Rendered students/edit_score.html.erb within layouts/application (Duration: 35.2ms | Allocations: 4795)
+  Rendered layout layouts/application.html.erb (Duration: 41.4ms | Allocations: 4883)
+Completed 500 Internal Server Error in 159ms (ActiveRecord: 2.2ms | Allocations: 12099)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `each' for #<ActionView::Base:0x0000000002ac60>
+
+'.freeze;     @student.scores each do |s| 
+                              ^^^^):
+    13:     <th>Grade</th>
+    14:     <th>Edit</th>
+    15:     <th>Delete</th>
+    16:     <% @student.scores each do |s| %>
+    17:         <tr>
+    18:             <td><%= s.subject %></td>
+    19:             <td><%= s.point %></td>
+  
+app/views/students/edit_score.html.erb:16
+Started GET "/students/1/edit_score" for 127.0.0.1 at 2022-09-22 14:54:57 +0700
+Processing by StudentsController#edit_score as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:63:in `edit_score'
+  [1m[36mScore Load (0.2ms)[0m  [1m[34mSELECT "scores".* FROM "scores" WHERE "scores"."student_id" = ?[0m  [["student_id", 1]]
+  ↳ app/controllers/students_controller.rb:69:in `edit_score'
+  Rendering layout layouts/application.html.erb
+  Rendering students/edit_score.html.erb within layouts/application
+  Rendered students/edit_score.html.erb within layouts/application (Duration: 76.1ms | Allocations: 4729)
+  Rendered layout layouts/application.html.erb (Duration: 80.6ms | Allocations: 4817)
+Completed 500 Internal Server Error in 119ms (ActiveRecord: 0.4ms | Allocations: 6859)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `each' for #<ActionView::Base:0x0000000002af80>
+
+'.freeze;     @student.scores each do |s| 
+                              ^^^^):
+    13:     <th>Grade</th>
+    14:     <th>Edit</th>
+    15:     <th>Delete</th>
+    16:     <% @student.scores each do |s| %>
+    17:         <tr>
+    18:             <td><%= s.subject %></td>
+    19:             <td><%= s.point %></td>
+  
+app/views/students/edit_score.html.erb:16
