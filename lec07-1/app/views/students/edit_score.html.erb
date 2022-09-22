@@ -6,20 +6,19 @@ table, th, td {
 
 <p> Average Score : <%= @averageScore %> </p>
 <p> Max Subject : <%= @maxSubject %> </p>
-
 <table>
     <th>Subject</th>
     <th>Point</th>
     <th>Grade</th>
     <th>Edit</th>
     <th>Delete</th>
-    <% @student.scores each do |s| %>
+    <% @student.scores.each do |score| %>
         <tr>
-            <td><%= s.subject %></td>
-            <td><%= s.point %></td>
-            <td><%= s.grade %></td>
-            <td><%= link_to 'EDIT', '/scores/' + s.id + '/edit' %></td>
-            <td><%= button_to "DELETE", s, method: :delete %></td>
+            <td><%= score.subject %></td>
+            <td><%= score.point %></td>
+            <td><%= score.grade %></td>
+            <td><%= link_to 'EDIT', '/scores/' + score.id.to_s + '/edit' %></td>
+            <td><%= button_to "DELETE", score, method: :delete %></td>
         </tr>
     <% end %>
 </table>

@@ -77,7 +77,6 @@ class StudentsController < ApplicationController
 
     @averageScore = @sumScore / @count.to_f
 
-
   end
 
   private
