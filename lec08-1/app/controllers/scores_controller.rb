@@ -16,6 +16,8 @@ class ScoresController < ApplicationController
     @student_id = params[:student_id].to_i
     if(params[:student_id])
       session[:from_edit_score] = 'true'
+    else
+      reset_session
     end
   end
 
@@ -23,10 +25,12 @@ class ScoresController < ApplicationController
   def edit
     if(params[:student_id])
       session[:from_edit_score] = 'true'
+    else
+      reset_session
     end
   end
 
-  # POST /scores or /scores.json
+  # POST /scores or /scores.json  
   def create
     @score = Score.new(score_params)
 
