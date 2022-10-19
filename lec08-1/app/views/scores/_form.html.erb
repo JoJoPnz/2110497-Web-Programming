@@ -26,10 +26,18 @@
     <%= form.text_field :grade %>
   </div>
 
-  <div>
-    <%= form.label :student_id, style: "display: block" %>
-    <%= form.text_field :student_id %>
-  </div>
+  <% if(params[:student_id]) %>
+    <div>
+      <%= form.label :student_id, style: "display: none" %>
+      <%= form.hidden_field :student_id, value: params[:student_id] %>
+      <%= form.hidden_field :from_edit_score, value: true %>
+    </div>
+  <% else %>
+    <div>
+      <%= form.label :student_id, style: "display: block" %>
+      <%= form.text_field :student_id %>
+    </div>
+  <% end %>
 
   <div>
     <%= form.submit %>

@@ -13,10 +13,17 @@ class ScoresController < ApplicationController
   # GET /scores/new
   def new
     @score = Score.new
+    @student_id = params[:student_id].to_i
+    if(params[:student_id])
+      session[:from_edit_score] = 'true'
+    end
   end
 
   # GET /scores/1/edit
   def edit
+    if(params[:student_id])
+      session[:from_edit_score] = 'true'
+    end
   end
 
   # POST /scores or /scores.json
@@ -36,6 +43,9 @@ class ScoresController < ApplicationController
 
   # PATCH/PUT /scores/1 or /scores/1.json
   def update
+    session[:from_edit_score] = params[:score][:from_edit_score]
+    #pp 'aaa'
+    #pp session[:from_edit_score]
     respond_to do |format|
       if @score.update(score_params)
         format.html { redirect_to score_url(@score), notice: "Score was successfully updated." }

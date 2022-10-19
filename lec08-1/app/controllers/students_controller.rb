@@ -59,6 +59,7 @@ class StudentsController < ApplicationController
 
   # GET edit_score
   def edit_score
+    reset_session
     @sumScore = 0
     @count = 0
     @maxScore = 0

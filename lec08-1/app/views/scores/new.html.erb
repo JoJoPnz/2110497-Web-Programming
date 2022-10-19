@@ -5,5 +5,9 @@
 <br>
 
 <div>
-  <%= link_to "Back to scores", scores_path %>
+  <% if(session[:from_edit_score] == 'true') %>
+    <%= link_to "Back to scores", '/students/' + @student_id.to_s + '/edit_score' %>
+  <% else %>
+    <%= link_to "Back to scores", scores_path %>
+  <% end %>
 </div>

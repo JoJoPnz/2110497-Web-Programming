@@ -4,7 +4,13 @@
 
 <div>
   <%= link_to "Edit this score", edit_score_path(@score) %> |
-  <%= link_to "Back to scores", scores_path %>
+
+  <% if(session[:from_edit_score] == 'true') %>
+    <%= link_to "Back to scores", '/students/' + @score.student_id.to_s + '/edit_score' %>
+  <% else %>
+    <%= link_to "Back to scores", scores_path %>
+  <% end %>
+  
 
   <%= button_to "Destroy this score", @score, method: :delete %>
 </div>

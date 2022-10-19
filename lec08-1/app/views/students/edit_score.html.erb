@@ -17,8 +17,11 @@ table, th, td {
             <td><%= score.subject %></td>
             <td><%= score.point %></td>
             <td><%= score.grade %></td>
-            <td><%= link_to 'EDIT', '/scores/' + score.id.to_s + '/edit' %></td>
+            <td><%= link_to 'EDIT', edit_score_path(score)+'?student_id='+@student.id.to_s %></td>
             <td><%= button_to "DELETE", score, method: :delete %></td>
         </tr>
     <% end %>
 </table>
+<%= link_to 'ADD', new_score_path+'?student_id='+@student.id.to_s %>
+<br>
+<%= link_to 'BACK', student_path %>
