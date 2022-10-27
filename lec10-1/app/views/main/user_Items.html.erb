@@ -1,0 +1,19 @@
+<p>User : <%= @user.name %></p>
+<table>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Stock</th>
+    <th>Edit</th>
+    <th>Delete</th>
+    <% @user.items.each do |item| %>
+        <tr>
+            <td><%= item.name %></td>
+            <td><%= item.price %></td>
+            <td><%= item.stock %></td>
+            <td><%= link_to 'EDIT', '/items/' + item.id.to_s + '/edit' %></td>
+            <td><%= button_to "DELETE", item, method: :delete %></td>
+        </tr>
+    <% end %>
+</table>
+<br>
+<%= link_to 'ADD', '/items/new' %>
