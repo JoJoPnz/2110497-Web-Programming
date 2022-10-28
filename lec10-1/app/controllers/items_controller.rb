@@ -12,11 +12,21 @@ class ItemsController < ApplicationController
 
   # GET /items/new
   def new
+    if(params[:from_user_Item] && params[:from_user_Item] == "true")
+      session[:from_user_Item] = true
+    else
+      session.delete(:from_user_Item)
+    end
     @item = Item.new
   end
 
   # GET /items/1/edit
   def edit
+    if(params[:from_user_Item] && params[:from_user_Item] == "true")
+      session[:from_user_Item] = true
+    else
+      session.delete(:from_user_Item)
+    end
   end
 
   # POST /items or /items.json

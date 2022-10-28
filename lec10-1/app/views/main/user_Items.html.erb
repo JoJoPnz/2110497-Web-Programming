@@ -1,19 +1,23 @@
 <p>User : <%= @user.name %></p>
-<table>
-    <th>Name</th>
-    <th>Price</th>
-    <th>Stock</th>
-    <th>Edit</th>
-    <th>Delete</th>
-    <% @user.items.each do |item| %>
-        <tr>
-            <td><%= item.name %></td>
-            <td><%= item.price %></td>
-            <td><%= item.stock %></td>
-            <td><%= link_to 'EDIT', '/items/' + item.id.to_s + '/edit' %></td>
-            <td><%= button_to "DELETE", item, method: :delete %></td>
-        </tr>
-    <% end %>
+<table class="container text-center table table-striped">
+    <thead class="table-info">
+        <th>Name</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        <% @user.items.each do |item| %>
+            <tr>
+                <td><%= item.name %></td>
+                <td><%= item.price %></td>
+                <td><%= item.stock %></td>
+                <td><%= link_to 'EDIT', edit_item_path(item)+'?from_user_Item=true' %></td>
+                <td><%= button_to "DELETE", main_user_Item_delete_path, params: { id: item.id  } %></td>
+            </tr>
+        <% end %>
+    </tbody>
 </table>
 <br>
-<%= link_to 'ADD', '/items/new' %>
+<%= link_to 'ADD', '/items/new'+'?from_user_Item=true' %>

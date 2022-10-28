@@ -1,0 +1,24 @@
+<p>This is Your inventory (id : <%= @user.id %> name : <%= @user.name %>)</p>
+<table class="container text-center table table-striped">
+    <thead class="table-info">
+        <th>Seller_id</th>
+        <th>Seller_name</th>
+        <th>Item_id</th>
+        <th>Item_name</th>
+        <th>Price</th>
+        <th>Timestamp</th>
+    </thead>
+    <tbody>
+        <% @user.inventories.each do |inventory| %>
+            <tr>
+                <td><%= Item.find(inventory.item_id).user_id %></td>
+                <td><%= User.find(Item.find(inventory.item_id).user_id).name %></td>
+                <td><%= inventory.item_id %></td>
+                <td><%= Item.find(inventory.item_id).name %></td>
+                <td><%= inventory.price %></td>
+                <td><%= inventory.timestamp %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+<br>
