@@ -19,4 +19,11 @@
     <%= item.stock %>
   </p>
 
+  <% if(item.picture.attached?) %>
+    <p>
+      <strong>Picure:</strong>
+      <%= image_tag item.picture.variant(:thumb75) %>
+    </p>
+  <% end %>
+
 </div>

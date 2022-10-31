@@ -6,6 +6,7 @@
         <th>Item_id</th>
         <th>Item_name</th>
         <th>Price</th>
+        <th>Picture</th>
         <th>Timestamp</th>
     </thead>
     <tbody>
@@ -16,6 +17,11 @@
                 <td><%= inventory.item_id %></td>
                 <td><%= Item.find(inventory.item_id).name %></td>
                 <td><%= inventory.price %></td>
+                <% if(Item.find(inventory.item_id).picture.attached?) %>
+                    <td><%= image_tag Item.find(inventory.item_id).picture.variant(:thumb75) %></td>
+                <% else %>
+                    <td>This item has no picture</td>
+                <% end %>
                 <td><%= inventory.timestamp %></td>
             </tr>
         <% end %>

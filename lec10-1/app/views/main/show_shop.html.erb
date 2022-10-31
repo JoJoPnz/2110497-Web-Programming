@@ -24,6 +24,7 @@
         <th>Name</th>
         <th>Price</th>
         <th>Stock</th>
+        <th>Picture</th>
         <% if(session[:logged_in] == true) %>
             <th>Buy</th>
         <% end %>
@@ -34,6 +35,13 @@
                 <td><%= item.name %></td>
                 <td><%= item.price %></td>
                 <td><%= item.stock %></td>
+                
+                <% if(item.picture.attached?) %>
+                    <td><%= image_tag item.picture.variant(:thumb75) %></td>
+                <% else %>
+                    <td>This item has no picture</td>
+                <% end %>
+
                 <% if(session[:logged_in] == true) %>
                     <td><%= button_to "Buy", main_buy_item_path, params: { item_id: item.id, shop_user_id: @user.id } %></td>
                 <% end %>

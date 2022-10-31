@@ -4,6 +4,7 @@
         <th>Name</th>
         <th>Price</th>
         <th>Stock</th>
+        <th>Picture</th>
         <th>Edit</th>
         <th>Delete</th>
     </thead>
@@ -13,6 +14,11 @@
                 <td><%= item.name %></td>
                 <td><%= item.price %></td>
                 <td><%= item.stock %></td>
+                <% if(item.picture.attached?) %>
+                    <td><%= image_tag item.picture.variant(:thumb75) %></td>
+                <% else %>
+                    <td>This item has no picture</td>
+                <% end %>
                 <td><%= link_to 'EDIT', edit_item_path(item)+'?from_user_Item=true' %></td>
                 <td><%= button_to "DELETE", main_user_Item_delete_path, params: { id: item.id  } %></td>
             </tr>

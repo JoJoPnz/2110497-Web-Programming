@@ -26,7 +26,8 @@ class MainController < ApplicationController
 
   def user_Item_delete
     @item = Item.find(params[:id])
-    @item.destroy
+    @item.user_id = nil
+    @item.save
     redirect_to(main_user_Item_path)
   end
 
